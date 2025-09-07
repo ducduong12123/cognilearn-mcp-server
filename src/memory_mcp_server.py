@@ -45,7 +45,10 @@ mcp = FastMCP(
 
 # --- Tạo biến cho ứng dụng ASGI ---
 app = mcp.streamable_http_app()
-
+@app.get("/healthz") # Định nghĩa một endpoint HTTP GET
+async def health_check():
+    """Endpoint để Render kiểm tra sức khỏe dịch vụ."""
+    return {"status": "ok", "service": "CogniLearn MCP Server"}
 # --- Định nghĩa các Tools ---
 @mcp.tool()
 def add_memory(

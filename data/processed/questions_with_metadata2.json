@@ -1,0 +1,226 @@
+[
+    {
+        "id": "MATH_ALG_001",
+        "content": "Một mảnh vườn hình chữ nhật có chu vi là 140 mét và diện tích là 1200 mét vuông. Tính chiều dài và chiều rộng của mảnh vườn.",
+        "tags": [
+            "toán học",
+            "đại số",
+            "phương trình bậc hai",
+            "ứng dụng thực tế"
+        ],
+        "metadata": {
+            "subject": "Không xác định",
+            "domain": "Không xác định",
+            "topic": "Không xác định",
+            "sub_topic": "",
+            "question_type": "Không xác định",
+            "difficulty": 0,
+            "required_concepts": []
+        }
+    },
+    {
+        "id": "MATH_ALG_002",
+        "content": "Tìm hai số nguyên dương biết tổng của chúng bằng 30 và tích của chúng bằng 221.",
+        "tags": [
+            "toán học",
+            "đại số",
+            "phương trình bậc hai",
+            "định lý Vi-et"
+        ],
+        "metadata": {
+            "subject": "Không xác định",
+            "domain": "Không xác định",
+            "topic": "Không xác định",
+            "sub_topic": "",
+            "question_type": "Không xác định",
+            "difficulty": 0,
+            "required_concepts": []
+        }
+    },
+    {
+        "id": "MATH_ALG_003",
+        "content": "Giải phương trình x^2 - 30x + 221 = 0.",
+        "tags": [
+            "toán học",
+            "đại số",
+            "phương trình bậc hai",
+            "cơ bản"
+        ],
+        "metadata": {
+            "subject": "Không xác định",
+            "domain": "Không xác định",
+            "topic": "Không xác định",
+            "sub_topic": "",
+            "question_type": "Không xác định",
+            "difficulty": 0,
+            "required_concepts": []
+        }
+    },
+    {
+        "id": "MATH_ALG_004",
+        "content": "Cho phương trình x^2 - 2(m-1)x + m^2 - 3 = 0. Tìm m để phương trình có hai nghiệm phân biệt.",
+        "tags": [
+            "toán học",
+            "đại số",
+            "phương trình bậc hai",
+            "biện luận nghiệm"
+        ],
+        "metadata": {
+            "subject": "Không xác định",
+            "domain": "Không xác định",
+            "topic": "Không xác định",
+            "sub_topic": "",
+            "question_type": "Không xác định",
+            "difficulty": 0,
+            "required_concepts": []
+        }
+    },
+    {
+        "id": "PHYS_MECHANICS_001",
+        "content": "Một vật rơi tự do từ độ cao 80m. Lấy g = 10 m/s^2. Tính thời gian vật rơi cho đến khi chạm đất.",
+        "tags": [
+            "vật lý",
+            "cơ học",
+            "rơi tự do"
+        ],
+        "metadata": {
+            "subject": "Không xác định",
+            "domain": "Không xác định",
+            "topic": "Không xác định",
+            "sub_topic": "",
+            "question_type": "Không xác định",
+            "difficulty": 0,
+            "required_concepts": []
+        }
+    },
+    {
+        "id": "PHYS_MECHANICS_002",
+        "content": "Một ô tô đang chuyển động với vận tốc 10 m/s thì hãm phanh, chuyển động chậm dần đều với gia tốc 2 m/s^2. Tính quãng đường ô tô đi được cho đến khi dừng hẳn.",
+        "tags": [
+            "vật lý",
+            "cơ học",
+            "chuyển động thẳng biến đổi đều"
+        ],
+        "metadata": {
+            "subject": "Không xác định",
+            "domain": "Không xác định",
+            "topic": "Không xác định",
+            "sub_topic": "",
+            "question_type": "Không xác định",
+            "difficulty": 0,
+            "required_concepts": []
+        }
+    },
+    {
+        "id": "PHYS_OSCILLATION_001",
+        "content": "Một con lắc lò xo dao động điều hòa với phương trình x = 5cos(4πt + π/2) cm. Xác định chu kỳ dao động của con lắc.",
+        "tags": [
+            "vật lý",
+            "dao động",
+            "con lắc lò xo"
+        ],
+        "metadata": {
+            "subject": "Không xác định",
+            "domain": "Không xác định",
+            "topic": "Không xác định",
+            "sub_topic": "",
+            "question_type": "Không xác định",
+            "difficulty": 0,
+            "required_concepts": []
+        }
+    },
+    {
+        "id": "PHYS_OSCILLATION_002",
+        "content": "Một con lắc đơn có chiều dài 1m, dao động tại nơi có gia tốc trọng trường là 9.8 m/s^2. Tính tần số góc của con lắc.",
+        "tags": [
+            "vật lý",
+            "dao động",
+            "con lắc đơn"
+        ],
+        "metadata": {
+            "subject": "Không xác định",
+            "domain": "Không xác định",
+            "topic": "Không xác định",
+            "sub_topic": "",
+            "question_type": "Không xác định",
+            "difficulty": 0,
+            "required_concepts": []
+        }
+    },
+    {
+        "id": "PROG_PYTHON_001",
+        "content": "Viết một hàm Python nhận vào một danh sách các số nguyên và trả về tổng của các số chẵn trong danh sách đó.",
+        "tags": [
+            "lập trình",
+            "python",
+            "danh sách",
+            "vòng lặp"
+        ],
+        "metadata": {
+            "subject": "Không xác định",
+            "domain": "Không xác định",
+            "topic": "Không xác định",
+            "sub_topic": "",
+            "question_type": "Không xác định",
+            "difficulty": 0,
+            "required_concepts": []
+        }
+    },
+    {
+        "id": "PROG_PYTHON_002",
+        "content": "Viết một hàm Python nhận vào một danh sách các số và trả về số lớn nhất trong danh sách mà không sử dụng hàm max().",
+        "tags": [
+            "lập trình",
+            "python",
+            "danh sách",
+            "thuật toán"
+        ],
+        "metadata": {
+            "subject": "Không xác định",
+            "domain": "Không xác định",
+            "topic": "Không xác định",
+            "sub_topic": "",
+            "question_type": "Không xác định",
+            "difficulty": 0,
+            "required_concepts": []
+        }
+    },
+    {
+        "id": "PROG_PYTHON_003",
+        "content": "Viết một hàm Python để kiểm tra xem một chuỗi có phải là chuỗi palindrome (đọc xuôi ngược như nhau) hay không.",
+        "tags": [
+            "lập trình",
+            "python",
+            "chuỗi",
+            "thuật toán"
+        ],
+        "metadata": {
+            "subject": "Không xác định",
+            "domain": "Không xác định",
+            "topic": "Không xác định",
+            "sub_topic": "",
+            "question_type": "Không xác định",
+            "difficulty": 0,
+            "required_concepts": []
+        }
+    },
+    {
+        "id": "MATH_GEOMETRY_001",
+        "content": "Trong mặt phẳng tọa độ Oxy, cho parabol (P): y = x^2 và đường thẳng (d): y = 2x + 3. Tìm tọa độ giao điểm của (P) và (d).",
+        "tags": [
+            "toán học",
+            "hình học",
+            "tọa độ",
+            "phương trình bậc hai"
+        ],
+        "metadata": {
+            "subject": "Không xác định",
+            "domain": "Không xác định",
+            "topic": "Không xác định",
+            "sub_topic": "",
+            "question_type": "Không xác định",
+            "difficulty": 0,
+            "required_concepts": []
+        }
+    }
+]

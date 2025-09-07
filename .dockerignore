@@ -1,0 +1,30 @@
+# Bỏ qua môi trường ảo Python và các cache của nó
+.venv/
+__pycache__/
+*.pyc
+
+# Bỏ qua các file và thư mục của Git
+.git/
+.gitignore
+
+# Bỏ qua các file cấu hình của IDE
+.vscode/
+.idea/
+
+# Bỏ qua các file log và dữ liệu tạm thời
+*.log
+*.tmp
+
+# Bỏ qua các file cài đặt và nén
+*.msi
+*.zip
+*.rar
+
+# Bỏ qua chính file này và file Dockerfile
+.dockerignore
+Dockerfile
+
+# Bỏ qua các file không liên quan trực tiếp đến việc chạy server
+README.md
+debug_similarity.py
+run_server.bat

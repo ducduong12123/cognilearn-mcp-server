@@ -1,0 +1,28 @@
+# D:\CogniLearn_Project\.gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/
+.env
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Dependency venv (nếu bạn tạo)
+/venv
+/env
+
+# Render.com
+.render/
+
+# Thêm bất kỳ file/thư mục nhạy cảm hoặc không cần thiết nào khác
+# Ví dụ: nếu bạn có thư mục data/cache thì thêm vào đây:
+# data/
+# cache/

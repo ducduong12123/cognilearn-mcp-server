@@ -1,0 +1,3841 @@
+[
+    {
+      "id": "MATH_ALG9_001",
+      "content": "Trong các hàm số sau, hàm số nào là hàm số bậc nhất?",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hàm số bậc nhất",
+        "sub_topic": [
+          "Định nghĩa hàm số bậc nhất y = ax + b (a ≠ 0)"
+        ],
+        "question_type": "Nhận dạng hàm số",
+        "cognitive_skills": ["Ghi nhớ"],
+        "difficulty_level": "Nhận biết (1)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "y = x² + 2",
+          "B": "y = 5 - 3x",
+          "C": "y = 1/x",
+          "D": "y = 0x + 7"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG9_002",
+      "content": "Điều kiện của x để biểu thức √(4 - 2x) có nghĩa là:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Căn bậc hai",
+        "sub_topic": [
+          "Điều kiện tồn tại của căn thức",
+          "Giải bất phương trình bậc nhất"
+        ],
+        "question_type": "Tìm điều kiện xác định của biểu thức",
+        "cognitive_skills": ["Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "x ≤ 2",
+          "B": "x ≥ 2",
+          "C": "x < 2",
+          "D": "x > 2"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO9_003",
+      "content": "Cho tam giác ABC vuông tại A, đường cao AH. Hệ thức nào sau đây là sai?",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Hệ thức lượng trong tam giác vuông",
+        "sub_topic": [
+          "Các hệ thức về cạnh và đường cao trong tam giác vuông"
+        ],
+        "question_type": "Nhận biết hệ thức",
+        "cognitive_skills": ["Ghi nhớ"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "AH² = HB.HC",
+          "B": "AB.AC = BC.AH",
+          "C": "AC² = CH.BC",
+          "D": "AB.AH = BC.BH"
+        },
+        "correct_answer": "D"
+      }
+    },
+    {
+      "id": "MATH_ALG9_004",
+      "content": "Phương trình x² - 5x + 6 = 0 có hai nghiệm là:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Phương trình bậc hai một ẩn",
+        "sub_topic": [
+          "Tính biệt thức Δ",
+          "Áp dụng công thức nghiệm"
+        ],
+        "question_type": "Giải phương trình",
+        "cognitive_skills": ["Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "x=2; x=3",
+          "B": "x=-2; x=-3",
+          "C": "x=1; x=5",
+          "D": "x=-1; x=-5"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO9_005",
+      "content": "Trong một đường tròn, góc ở tâm và góc nội tiếp cùng chắn một cung thì:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Góc với đường tròn",
+        "sub_topic": [
+          "Quan hệ giữa góc ở tâm và góc nội tiếp"
+        ],
+        "question_type": "Nêu định lý/hệ quả",
+        "cognitive_skills": ["Ghi nhớ"],
+        "difficulty_level": "Nhận biết (1)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "Góc ở tâm bằng góc nội tiếp",
+          "B": "Góc ở tâm bằng nửa góc nội tiếp",
+          "C": "Góc ở tâm bằng hai lần góc nội tiếp",
+          "D": "Tổng hai góc bằng 180°"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_ALG9_006",
+      "content": "Rút gọn biểu thức A = √( (√7 - 3)² ).",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Căn bậc hai",
+        "sub_topic": [
+          "Hằng đẳng thức √(A²) = |A|",
+          "So sánh số vô tỉ"
+        ],
+        "question_type": "Rút gọn biểu thức",
+        "cognitive_skills": ["Tư duy Logic", "Độ chính xác & Cẩn thận"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "√7 - 3",
+          "B": "3 - √7",
+          "C": "4",
+          "D": "-4"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO9_007",
+      "content": "Cho tam giác ABC vuông tại A có AB = 6, AC = 8. Bán kính đường tròn ngoại tiếp tam giác đó bằng:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Đường tròn",
+        "sub_topic": [
+          "Định lý Pytago",
+          "Tâm và bán kính đường tròn ngoại tiếp tam giác vuông"
+        ],
+        "question_type": "Tính toán bán kính đường tròn ngoại tiếp",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "10",
+          "B": "5",
+          "C": "7",
+          "D": "14"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG9_008",
+      "content": "Hệ phương trình {2x + y = 5; x - y = 1} có nghiệm là:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hệ hai phương trình bậc nhất hai ẩn",
+        "sub_topic": [
+          "Phương pháp cộng đại số"
+        ],
+        "question_type": "Giải hệ phương trình",
+        "cognitive_skills": ["Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "(x=2, y=1)",
+          "B": "(x=1, y=3)",
+          "C": "(x=3, y=-1)",
+          "D": "(x=0, y=5)"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO9_009",
+      "content": "Một hình trụ có bán kính đáy r và chiều cao h. Công thức tính thể tích V của hình trụ là:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Hình học không gian",
+        "sub_topic": [
+          "Công thức thể tích hình trụ"
+        ],
+        "question_type": "Nêu công thức",
+        "cognitive_skills": ["Ghi nhớ"],
+        "difficulty_level": "Nhận biết (1)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "V = πr²h",
+          "B": "V = (1/3)πr²h",
+          "C": "V = 2πrh",
+          "D": "V = πrh"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_ALG9_010",
+      "content": "Gọi x₁, x₂ là hai nghiệm của phương trình x² - 2x - 5 = 0. Tích x₁.x₂ bằng:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Phương trình bậc hai một ẩn",
+        "sub_topic": [
+          "Hệ thức Vi-ét (Tích hai nghiệm)"
+        ],
+        "question_type": "Áp dụng hệ thức Vi-ét",
+        "cognitive_skills": ["Ghi nhớ", "Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "2",
+          "B": "-2",
+          "C": "5",
+          "D": "-5"
+        },
+        "correct_answer": "D"
+      }
+    },
+    {
+      "id": "MATH_ALG9_011",
+      "content": "Giá trị của biểu thức A = 2√5 + √20 - √45 là:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Căn bậc hai",
+        "sub_topic": [
+          "Đưa thừa số ra ngoài dấu căn",
+          "Cộng trừ các căn thức đồng dạng"
+        ],
+        "question_type": "Rút gọn biểu thức",
+        "cognitive_skills": ["Khả năng Áp dụng", "Độ chính xác & Cẩn thận"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "√5",
+          "B": "2√5",
+          "C": "0",
+          "D": "-√5"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO9_012",
+      "content": "Trong tam giác ABC vuông tại A, tan(B) bằng:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Tỉ số lượng giác của góc nhọn",
+        "sub_topic": [
+          "Định nghĩa tỉ số lượng giác tan"
+        ],
+        "question_type": "Nêu định nghĩa",
+        "cognitive_skills": ["Ghi nhớ"],
+        "difficulty_level": "Nhận biết (1)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "AB/BC",
+          "B": "AC/BC",
+          "C": "AC/AB",
+          "D": "AB/AC"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_ALG9_013",
+      "content": "Hàm số y = (2m - 4)x + 1 là hàm số nghịch biến khi:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hàm số bậc nhất",
+        "sub_topic": [
+          "Điều kiện để hàm số bậc nhất nghịch biến (a < 0)"
+        ],
+        "question_type": "Tìm điều kiện của tham số",
+        "cognitive_skills": ["Ghi nhớ", "Tư duy Logic"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "m > 2",
+          "B": "m < 2",
+          "C": "m = 2",
+          "D": "m > 0"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_GEO9_014",
+      "content": "Tứ giác ABCD nội tiếp đường tròn có góc A = 60°, góc B = 80°. Số đo góc C và góc D lần lượt là:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Góc với đường tròn",
+        "sub_topic": [
+          "Tính chất của tứ giác nội tiếp (tổng hai góc đối)"
+        ],
+        "question_type": "Tính số đo góc",
+        "cognitive_skills": ["Ghi nhớ", "Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "120°, 100°",
+          "B": "100°, 120°",
+          "C": "60°, 80°",
+          "D": "120°, 80°"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_ALG9_015",
+      "content": "Phương trình x² - 2x + 1 = 0 có biệt thức Δ bằng:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Phương trình bậc hai một ẩn",
+        "sub_topic": [
+          "Công thức tính biệt thức Δ = b² - 4ac"
+        ],
+        "question_type": "Tính toán giá trị",
+        "cognitive_skills": ["Ghi nhớ"],
+        "difficulty_level": "Nhận biết (1)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "0",
+          "B": "4",
+          "C": "-4",
+          "D": "8"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO9_016",
+      "content": "Cho đường tròn (O; 6cm) và một điểm A cách O một khoảng 10cm. Kẻ tiếp tuyến AB với đường tròn (B là tiếp điểm). Độ dài đoạn thẳng AB là:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Đường tròn",
+        "sub_topic": [
+          "Tính chất của tiếp tuyến (vuông góc với bán kính tại tiếp điểm)",
+          "Định lý Pytago"
+        ],
+        "question_type": "Tính toán độ dài đoạn tiếp tuyến",
+        "cognitive_skills": ["Tư duy Không gian", "Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "16cm",
+          "B": "4cm",
+          "C": "√136cm",
+          "D": "8cm"
+        },
+        "correct_answer": "D"
+      }
+    },
+    {
+      "id": "MATH_ALG9_017",
+      "content": "Đồ thị hàm số y = 3x + 6 cắt trục hoành tại điểm có tọa độ là:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hàm số bậc nhất",
+        "sub_topic": [
+          "Tọa độ giao điểm với trục hoành (y=0)"
+        ],
+        "question_type": "Tìm tọa độ giao điểm của đồ thị và trục tọa độ",
+        "cognitive_skills": ["Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "(0, 6)",
+          "B": "(2, 0)",
+          "C": "(6, 0)",
+          "D": "(-2, 0)"
+        },
+        "correct_answer": "D"
+      }
+    },
+    {
+      "id": "MATH_GEO9_018",
+      "content": "Nếu hai đường tròn (O) và (O') tiếp xúc ngoài thì số tiếp tuyến chung của chúng là:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Đường tròn",
+        "sub_topic": [
+          "Vị trí tương đối và số tiếp tuyến chung của hai đường tròn"
+        ],
+        "question_type": "Nhận biết tính chất hình học",
+        "cognitive_skills": ["Ghi nhớ", "Tư duy Không gian"],
+        "difficulty_level": "Nhận biết (1)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_ALG9_019",
+      "content": "Tìm x, biết ³√x = -2.",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Căn bậc ba",
+        "sub_topic": [
+          "Định nghĩa căn bậc ba"
+        ],
+        "question_type": "Giải phương trình cơ bản",
+        "cognitive_skills": ["Ghi nhớ"],
+        "difficulty_level": "Nhận biết (1)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "-8",
+          "B": "8",
+          "C": "-6",
+          "D": "Không có x"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO9_020",
+      "content": "Một quả bóng hình cầu có thể tích là 36π cm³. Diện tích mặt cầu của quả bóng đó là:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Hình học không gian",
+        "sub_topic": [
+          "Áp dụng công thức thể tích hình cầu để tìm bán kính",
+          "Áp dụng công thức diện tích mặt cầu"
+        ],
+        "question_type": "Tính toán yếu tố của vật thể",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Khả năng Áp dụng"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "36π cm²",
+          "B": "9π cm²",
+          "C": "18π cm²",
+          "D": "27π cm²"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_ALG9_021",
+      "content": "Tìm m để phương trình x² - 2mx + 4 = 0 có nghiệm kép.",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Phương trình bậc hai một ẩn",
+        "sub_topic": [
+          "Điều kiện để phương trình có nghiệm kép (Δ' = 0)",
+          "Giải phương trình tìm tham số m"
+        ],
+        "question_type": "Tìm tham số thỏa mãn điều kiện về số nghiệm",
+        "cognitive_skills": ["Khả năng Áp dụng", "Tư duy Biện luận"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "m = 4",
+          "B": "m = -2",
+          "C": "m = 2",
+          "D": "m = ±2"
+        },
+        "correct_answer": "D"
+      }
+    },
+    {
+      "id": "MATH_ALG9_022",
+      "content": "Một người mua hai loại hàng và phải trả tổng cộng 2,17 triệu đồng, kể cả thuế giá trị gia tăng (VAT) với mức 10% đối với loại hàng thứ nhất và 8% đối với loại hàng thứ hai. Nếu thuế VAT là 9% cho cả hai loại hàng thì người đó phải trả tổng cộng 2,18 triệu đồng. Hỏi giá của mỗi loại hàng (không kể thuế VAT) là bao nhiêu?",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Giải bài toán bằng cách lập hệ phương trình",
+        "sub_topic": [
+          "Phân tích bài toán phần trăm",
+          "Gọi ẩn và đặt điều kiện",
+          "Lập hệ phương trình từ giả thiết",
+          "Giải hệ phương trình"
+        ],
+        "question_type": "Giải bài toán có lời văn (Dạng kinh tế)",
+        "cognitive_skills": ["Tư duy Logic", "Sự Kiên trì", "Khả năng Áp dụng"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "0,5 triệu và 1,5 triệu",
+          "B": "0,7 triệu và 1,3 triệu",
+          "C": "1,2 triệu và 0,8 triệu",
+          "D": "0,9 triệu và 1,1 triệu"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO9_023",
+      "content": "Cho tam giác ABC vuông tại A, có góc B = 60° và cạnh AB = 5cm. Độ dài cạnh AC là:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Tỉ số lượng giác của góc nhọn",
+        "sub_topic": [
+          "Áp dụng tỉ số lượng giác tan"
+        ],
+        "question_type": "Tính toán độ dài cạnh",
+        "cognitive_skills": ["Ghi nhớ", "Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "10cm",
+          "B": "5√3cm",
+          "C": "5/√3cm",
+          "D": "5√2cm"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG9_024",
+      "content": "Giá trị của biểu thức A = (√12 - √27) / √3 là:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Căn bậc hai",
+        "sub_topic": [
+          "Đưa thừa số ra ngoài dấu căn",
+          "Rút gọn phân thức chứa căn"
+        ],
+        "question_type": "Rút gọn biểu thức",
+        "cognitive_skills": ["Khả năng Áp dụng", "Độ chính xác & Cẩn thận"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "-1",
+          "B": "1",
+          "C": "√3",
+          "D": "3"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO9_025",
+      "content": "Cho tam giác ABC nhọn nội tiếp đường tròn (O). Các đường cao AD, BE, CF cắt nhau tại H. Tứ giác nào sau đây không nội tiếp được đường tròn?",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Góc với đường tròn",
+        "sub_topic": [
+          "Dấu hiệu nhận biết tứ giác nội tiếp (tứ giác có hai đỉnh cùng nhìn một cạnh dưới một góc vuông hoặc tổng hai góc đối bằng 180°)"
+        ],
+        "question_type": "Nhận biết tứ giác nội tiếp",
+        "cognitive_skills": ["Tư duy Không gian", "Ghi nhớ"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "AEHF",
+          "B": "BFHD",
+          "C": "CDHE",
+          "D": "AFHE"
+        },
+        "correct_answer": "D"
+      }
+    },
+    {
+      "id": "MATH_ALG9_026",
+      "content": "Tìm m để đường thẳng y = 2x + m - 1 cắt Parabol y = x² tại hai điểm phân biệt.",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Sự tương giao của đồ thị",
+        "sub_topic": [
+          "Phương trình hoành độ giao điểm",
+          "Điều kiện để phương trình bậc hai có hai nghiệm phân biệt (Δ > 0)"
+        ],
+        "question_type": "Tìm tham số thỏa mãn điều kiện về số giao điểm",
+        "cognitive_skills": ["Khả năng Áp dụng", "Tư duy Biện luận"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "m > 2",
+          "B": "m < 2",
+          "C": "m > 0",
+          "D": "m < 0"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO9_027",
+      "content": "Cho đường tròn (O; 5cm) và một dây AB. Khoảng cách từ tâm O đến dây AB là 3cm. Độ dài dây AB là:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Đường tròn",
+        "sub_topic": [
+          "Quan hệ vuông góc giữa đường kính và dây cung",
+          "Định lý Pytago"
+        ],
+        "question_type": "Tính toán yếu tố trong đường tròn",
+        "cognitive_skills": ["Tư duy Không gian", "Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "4cm",
+          "B": "8cm",
+          "C": "6cm",
+          "D": "10cm"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG9_028",
+      "content": "Gọi x₁, x₂ là hai nghiệm của phương trình x² - 4x + 1 = 0. Giá trị của biểu thức A = 1/x₁ + 1/x₂ là:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Phương trình bậc hai một ẩn",
+        "sub_topic": [
+          "Hệ thức Vi-ét",
+          "Biến đổi biểu thức đối xứng của nghiệm"
+        ],
+        "question_type": "Tính giá trị biểu thức nghiệm",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Khả năng Áp dụng"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "4",
+          "B": "-4",
+          "C": "1/4",
+          "D": "1"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO9_029",
+      "content": "Một chiếc máy bay bay lên với vận tốc 500 km/h. Đường bay lên tạo với phương ngang một góc 30°. Hỏi sau 1,2 phút máy bay lên cao được bao nhiêu km theo phương thẳng đứng?",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Tỉ số lượng giác của góc nhọn",
+        "sub_topic": [
+          "Đổi đơn vị thời gian",
+          "Tính quãng đường bay được",
+          "Mô hình hóa bài toán bằng tam giác vuông",
+          "Áp dụng tỉ số lượng giác sin"
+        ],
+        "question_type": "Giải bài toán thực tế ứng dụng tỉ số lượng giác",
+        "cognitive_skills": ["Tư duy Logic", "Khả năng Áp dụng", "Độ chính xác & Cẩn thận"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "10 km",
+          "B": "5 km",
+          "C": "5√3 km",
+          "D": "12 km"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG9_030",
+      "content": "Tìm tất cả các giá trị của m để hàm số y = (m² - 4)x + 3 là hàm số bậc nhất và đồng biến trên R.",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hàm số bậc nhất",
+        "sub_topic": [
+          "Điều kiện để hàm số là hàm bậc nhất",
+          "Điều kiện để hàm số đồng biến",
+          "Giải bất phương trình bậc hai"
+        ],
+        "question_type": "Tìm tham số thỏa mãn đồng thời nhiều điều kiện",
+        "cognitive_skills": ["Tư duy Biện luận", "Tư duy Logic"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "m > 2",
+          "B": "m < -2",
+          "C": "m > 2 hoặc m < -2",
+          "D": "-2 < m < 2"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_GEO9_031",
+      "content": "Cho tam giác ABC cân tại A, nội tiếp đường tròn (O). Biết góc BAC = 50°. Số đo cung nhỏ AB là:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Góc với đường tròn",
+        "sub_topic": [
+          "Tính chất tam giác cân",
+          "Định lý tổng ba góc trong một tam giác",
+          "Quan hệ giữa góc nội tiếp và cung bị chắn"
+        ],
+        "question_type": "Tính số đo cung",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Khả năng Áp dụng"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "130°",
+          "B": "65°",
+          "C": "100°",
+          "D": "115°"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_ALG9_032",
+      "content": "Giải hệ phương trình {1/x + 1/y = 5/6; 2/x - 3/y = -5/6}.",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hệ hai phương trình bậc nhất hai ẩn",
+        "sub_topic": [
+          "Đặt điều kiện xác định",
+          "Phương pháp đặt ẩn phụ",
+          "Giải hệ phương trình bậc nhất hai ẩn mới",
+          "Tìm lại nghiệm ban đầu"
+        ],
+        "question_type": "Giải hệ phương trình chứa ẩn ở mẫu",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Độ chính xác & Cẩn thận"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "(x=2, y=3)",
+          "B": "(x=3, y=2)",
+          "C": "(x=1/2, y=1/3)",
+          "D": "(x=6, y=1)"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO9_033",
+      "content": "Cho tam giác ABC có AB=6, AC=8, BC=10. Quay tam giác này một vòng quanh cạnh BC. Thể tích của vật thể tròn xoay được tạo thành là:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Hình học không gian",
+        "sub_topic": [
+          "Định lý Pytago đảo để nhận biết tam giác vuông",
+          "Vật thể tạo thành là hai hình nón chung đáy",
+          "Hệ thức AH.BC = AB.AC để tìm bán kính đáy chung",
+          "Công thức thể tích hình nón"
+        ],
+        "question_type": "Bài toán tạo vật thể tròn xoay phức hợp",
+        "cognitive_skills": ["Tư duy Không gian", "Tư duy Phân tích - Tổng hợp", "Sự Kiên trì"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "96π",
+          "B": "128π",
+          "C": "76.8π",
+          "D": "256π"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_ALG9_034",
+      "content": "Tìm giá trị lớn nhất của biểu thức A = √(x-1) + √(3-x).",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Căn bậc hai",
+        "sub_topic": [
+          "Tìm điều kiện xác định",
+          "Bất đẳng thức Bunyakovsky",
+          "Phương pháp bình phương hai vế"
+        ],
+        "question_type": "Tìm giá trị lớn nhất của biểu thức chứa căn",
+        "cognitive_skills": ["Tư duy Sáng tạo", "Khả năng Áp dụng", "Tư duy Trừu tượng"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "2",
+          "B": "√2",
+          "C": "4",
+          "D": "2√2"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO9_035",
+      "content": "Cho đường tròn (O) và một điểm M cố định nằm ngoài đường tròn. Kẻ hai tiếp tuyến MA, MB và một cát tuyến MCD thay đổi. Gọi I là trung điểm của CD. Quỹ tích của điểm I khi cát tuyến MCD quay quanh M là:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Đường tròn",
+        "sub_topic": [
+          "Quan hệ vuông góc giữa đường kính và dây cung (OI ⊥ CD)",
+          "Bài toán quỹ tích dựa trên góc không đổi (góc OIM = 90°)",
+          "Quỹ tích là cung chứa góc"
+        ],
+        "question_type": "Bài toán quỹ tích hình học phẳng",
+        "cognitive_skills": ["Tư duy Không gian", "Tư duy Phân tích - Tổng hợp", "Tư duy Sáng tạo"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "Một đường thẳng",
+          "B": "Một đường tròn",
+          "C": "Một cung tròn đường kính OM (nằm trong (O))",
+          "D": "Một đoạn thẳng"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_ALG9_036",
+      "content": "Cho phương trình x² - 2(m-1)x + m² - 3m = 0. Tìm m để phương trình có hai nghiệm phân biệt x₁, x₂ sao cho x₁² + x₂² = 8.",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Phương trình bậc hai một ẩn",
+        "sub_topic": [
+          "Điều kiện để phương trình có hai nghiệm phân biệt (Δ' > 0)",
+          "Hệ thức Vi-ét",
+          "Biến đổi biểu thức đối xứng của nghiệm",
+          "Giải phương trình chứa tham số và đối chiếu điều kiện"
+        ],
+        "question_type": "Tìm tham số thỏa mãn hệ thức phức tạp của nghiệm",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Tư duy Biện luận", "Sự Kiên trì"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "m = 1",
+          "B": "m = 3",
+          "C": "m = -1",
+          "D": "m = -3"
+        },
+        "correct_answer": "D"
+      }
+    },
+    {
+      "id": "MATH_GEO9_037",
+      "content": "Cho tam giác ABC vuông tại A, đường cao AH. Biết AH = 12cm, BC = 25cm. Độ dài hai cạnh AB và AC là:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Hệ thức lượng trong tam giác vuông",
+        "sub_topic": [
+          "Hệ thức AH.BC = AB.AC",
+          "Định lý Pytago",
+          "Giải hệ phương trình (hoặc sử dụng Vi-ét đảo)"
+        ],
+        "question_type": "Tính toán các yếu tố khi biết các thông số gián tiếp",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Sự Kiên trì", "Khả năng Áp dụng"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "AB=15, AC=20",
+          "B": "AB=10, AC=15",
+          "C": "AB=9, AC=16",
+          "D": "AB=12, AC=13"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "ALG_MATH9_038",
+      "content": "Phương trình x⁴ - 8x² - 9 = 0 có tổng các nghiệm là:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Phương trình quy về bậc hai",
+        "sub_topic": [
+          "Phương pháp đặt ẩn phụ cho phương trình trùng phương",
+          "Giải phương trình bậc hai",
+          "Kiểm tra điều kiện của ẩn phụ và tìm nghiệm ban đầu",
+          "Tính tổng các nghiệm"
+        ],
+        "question_type": "Giải phương trình trùng phương và tính toán trên tập nghiệm",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Khả năng Áp dụng"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "8",
+          "B": "0",
+          "C": "9",
+          "D": "-8"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "GEO_MATH9_039",
+      "content": "Cho hai đường tròn (O; 9cm) và (O'; 4cm) tiếp xúc ngoài tại A. Kẻ tiếp tuyến chung ngoài BC (B ∈ (O), C ∈ (O')). Diện tích của tứ giác BCCO' là:",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Đường tròn",
+        "sub_topic": [
+          "Nhận dạng tứ giác BCCO' là hình thang vuông",
+          "Tính độ dài đoạn tiếp tuyến chung",
+          "Áp dụng công thức diện tích hình thang"
+        ],
+        "question_type": "Tính diện tích hình phức hợp",
+        "cognitive_skills": ["Tư duy Không gian", "Tư duy Phân tích - Tổng hợp", "Sự Kiên trì"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "78 cm²",
+          "B": "156 cm²",
+          "C": "39 cm²",
+          "D": "72 cm²"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "ALG_MATH9_040",
+      "content": "Cho x, y là các số thực thỏa mãn x² + y² = 1. Tìm giá trị lớn nhất của biểu thức P = x + 2y.",
+      "tags": {
+        "grade_level": 9,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Bất đẳng thức",
+        "sub_topic": [
+          "Bất đẳng thức Bunyakovsky"
+        ],
+        "question_type": "Tìm giá trị lớn nhất của biểu thức có điều kiện",
+        "cognitive_skills": ["Tư duy Sáng tạo", "Khả năng Áp dụng", "Tư duy Trừu tượng"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "3",
+          "B": "5",
+          "C": "√3",
+          "D": "√5"
+        },
+        "correct_answer": "D"
+      }
+    },
+    {
+      "id": "MATH_ALG10_001",
+      "content": "Mệnh đề nào sau đây là mệnh đề phủ định của mệnh đề: \"Mọi học sinh trong lớp 10A đều thích môn Toán\"?",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Mệnh đề - Tập hợp",
+        "sub_topic": [
+          "Mệnh đề phủ định"
+        ],
+        "question_type": "Tìm mệnh đề phủ định",
+        "cognitive_skills": ["Ghi nhớ", "Tư duy Logic"],
+        "difficulty_level": "Nhận biết (1)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "Mọi học sinh trong lớp 10A đều không thích môn Toán.",
+          "B": "Tất cả học sinh trong lớp 10A đều thích môn Văn.",
+          "C": "Có ít nhất một học sinh trong lớp 10A không thích môn Toán.",
+          "D": "Có ít nhất một học sinh trong lớp 10A thích môn Toán."
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_GEO10_002",
+      "content": "Cho hình bình hành ABCD. Đẳng thức vector nào sau đây là đúng?",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Vector",
+        "sub_topic": [
+          "Quy tắc hình bình hành"
+        ],
+        "question_type": "Nhận biết quy tắc vector",
+        "cognitive_skills": ["Ghi nhớ"],
+        "difficulty_level": "Nhận biết (1)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "AB + AD = CA",
+          "B": "AB + AD = AC",
+          "C": "AB + BC = BD",
+          "D": "AD + CD = AC"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG10_003",
+      "content": "Tìm tập xác định D của hàm số y = (x+1)/(x-1).",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hàm số",
+        "sub_topic": [
+          "Điều kiện mẫu thức khác không"
+        ],
+        "question_type": "Tìm tập xác định của hàm số",
+        "cognitive_skills": ["Khả năng Áp dụng"],
+        "difficulty_level": "Nhận biết (1)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "D = R",
+          "B": "D = R \\ {1}",
+          "C": "D = R \\ {-1}",
+          "D": "D = (1, +∞)"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_GEO10_004",
+      "content": "Trong mặt phẳng Oxy, cho vector a = (2; -3). Tọa độ của vector -2a là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương pháp tọa độ trong mặt phẳng",
+        "sub_topic": [
+          "Phép nhân vector với một số"
+        ],
+        "question_type": "Tính toán tọa độ vector",
+        "cognitive_skills": ["Ghi nhớ"],
+        "difficulty_level": "Nhận biết (1)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "(-4; -6)",
+          "B": "(4; -6)",
+          "C": "(-4; 6)",
+          "D": "(4; 6)"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_ALG10_005",
+      "content": "Parabol (P): y = ax² + bx + c có hệ số a > 0 thì:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hàm số bậc hai",
+        "sub_topic": [
+          "Chiều biến thiên và dạng đồ thị của hàm số bậc hai"
+        ],
+        "question_type": "Nhận biết tính chất đồ thị",
+        "cognitive_skills": ["Ghi nhớ"],
+        "difficulty_level": "Nhận biết (1)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "Bề lõm của parabol quay xuống dưới.",
+          "B": "Bề lõm của parabol quay lên trên.",
+          "C": "Parabol không có bề lõm.",
+          "D": "Parabol là một đường thẳng."
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_GEO10_006",
+      "content": "Cho tam giác ABC. Diện tích S của tam giác được tính bằng công thức nào sau đây?",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Hệ thức lượng trong tam giác",
+        "sub_topic": [
+          "Công thức tính diện tích tam giác"
+        ],
+        "question_type": "Nêu công thức",
+        "cognitive_skills": ["Ghi nhớ"],
+        "difficulty_level": "Nhận biết (1)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "S = ab.cos(C)",
+          "B": "S = (1/2)ac.sin(B)",
+          "C": "S = (1/2)bc.cos(A)",
+          "D": "S = abc"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG10_007",
+      "content": "Phương trình ax + b = 0 là phương trình bậc nhất khi nào?",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Phương trình quy về bậc nhất, bậc hai",
+        "sub_topic": [
+          "Định nghĩa phương trình bậc nhất"
+        ],
+        "question_type": "Nêu định nghĩa",
+        "cognitive_skills": ["Ghi nhớ"],
+        "difficulty_level": "Nhận biết (1)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "a ≠ 0",
+          "B": "b ≠ 0",
+          "C": "a = 0",
+          "D": "a = 0 và b ≠ 0"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_008",
+      "content": "Đường thẳng d có vector chỉ phương u=(2, -1). Vector nào sau đây là vector pháp tuyến của d?",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương trình đường thẳng",
+        "sub_topic": [
+          "Quan hệ giữa vector chỉ phương và vector pháp tuyến"
+        ],
+        "question_type": "Nhận biết vector",
+        "cognitive_skills": ["Ghi nhớ"],
+        "difficulty_level": "Nhận biết (1)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "(2, 1)",
+          "B": "(-1, 2)",
+          "C": "(1, 2)",
+          "D": "(-2, -1)"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_ALG10_009",
+      "content": "Cho tập hợp A = {x ∈ R | -1 ≤ x < 3}. Tập hợp A được viết dưới dạng khoảng, đoạn là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Mệnh đề - Tập hợp",
+        "sub_topic": [
+          "Ký hiệu khoảng, đoạn, nửa khoảng"
+        ],
+        "question_type": "Biểu diễn tập hợp",
+        "cognitive_skills": ["Ghi nhớ"],
+        "difficulty_level": "Nhận biết (1)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "A = [-1, 3]",
+          "B": "A = (-1, 3)",
+          "C": "A = [-1, 3)",
+          "D": "A = (-1, 3]"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_GEO10_010",
+      "content": "Trong mặt phẳng Oxy, cho vector u=(3, -4). Độ dài của vector u là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương pháp tọa độ trong mặt phẳng",
+        "sub_topic": [
+          "Công thức tính độ dài vector"
+        ],
+        "question_type": "Tính độ dài vector",
+        "cognitive_skills": ["Ghi nhớ"],
+        "difficulty_level": "Nhận biết (1)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "1",
+          "B": "5",
+          "C": "7",
+          "D": "25"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG10_011",
+      "content": "Tìm tập xác định D của hàm số y = √(x-1) + 1/√(3-x).",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hàm số",
+        "sub_topic": [
+          "Điều kiện tồn tại của căn thức",
+          "Điều kiện mẫu thức khác không",
+          "Giao của các tập hợp điều kiện"
+        ],
+        "question_type": "Tìm tập xác định của hàm số",
+        "cognitive_skills": ["Khả năng Áp dụng", "Tư duy Logic"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "D = [1, 3)",
+          "B": "D = (1, 3)",
+          "C": "D = [1, 3]",
+          "D": "D = (1, 3]"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_012",
+      "content": "Trong mặt phẳng Oxy, cho tam giác ABC có A(1, 5), B(-4, -3), C(6, -1). Tọa độ trọng tâm G của tam giác là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương pháp tọa độ trong mặt phẳng",
+        "sub_topic": [
+          "Công thức tọa độ trọng tâm"
+        ],
+        "question_type": "Tính toán tọa độ điểm",
+        "cognitive_skills": ["Ghi nhớ", "Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "G(3, 1)",
+          "B": "G(1, 1/3)",
+          "C": "G(1, 1)",
+          "D": "G(3, 3)"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_ALG10_013",
+      "content": "Parabol (P): y = 2x² + 4x - 1 có trục đối xứng là đường thẳng:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hàm số bậc hai",
+        "sub_topic": [
+          "Công thức xác định trục đối xứng Parabol"
+        ],
+        "question_type": "Xác định trục đối xứng",
+        "cognitive_skills": ["Ghi nhớ", "Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "x = 1",
+          "B": "x = 2",
+          "C": "x = -2",
+          "D": "x = -1"
+        },
+        "correct_answer": "D"
+      }
+    },
+    {
+      "id": "MATH_GEO10_014",
+      "content": "Cho tam giác ABC. Gọi M là trung điểm của BC. Đẳng thức nào sau đây đúng?",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Vector",
+        "sub_topic": [
+          "Tính chất trung tuyến của vector"
+        ],
+        "question_type": "Nhận biết hệ thức vector",
+        "cognitive_skills": ["Ghi nhớ", "Tư duy Không gian"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "AB + AC = AM",
+          "B": "2AB + 2AC = AM",
+          "C": "AB + AC = 2AM",
+          "D": "AB + AC = 3AM"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_ALG10_015",
+      "content": "Tập nghiệm của phương trình √(x² - 4x + 3) = x - 1 là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Phương trình chứa căn",
+        "sub_topic": [
+          "Phương trình dạng √(A) = B",
+          "Đặt điều kiện và bình phương hai vế"
+        ],
+        "question_type": "Giải phương trình vô tỉ",
+        "cognitive_skills": ["Khả năng Áp dụng", "Độ chính xác & Cẩn thận"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "S = {1}",
+          "B": "S = ∅",
+          "C": "S = {2}",
+          "D": "S = R"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_GEO10_016",
+      "content": "Trong mặt phẳng Oxy, cho hai vector a=(2, 1) và b=(-3, 4). Tích vô hướng a.b là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương pháp tọa độ trong mặt phẳng",
+        "sub_topic": [
+          "Biểu thức tọa độ của tích vô hướng"
+        ],
+        "question_type": "Tính tích vô hướng",
+        "cognitive_skills": ["Ghi nhớ", "Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "-10",
+          "B": "10",
+          "C": "2",
+          "D": "-2"
+        },
+        "correct_answer": "D"
+      }
+    },
+    {
+      "id": "MATH_ALG10_017",
+      "content": "Cho A = (-∞, 2] và B = (0, 5). Tập hợp A ∩ B là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Mệnh đề - Tập hợp",
+        "sub_topic": [
+          "Phép giao của hai tập hợp"
+        ],
+        "question_type": "Thực hiện phép toán trên tập hợp",
+        "cognitive_skills": ["Khả năng Áp dụng", "Tư duy Logic"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "(0, 2]",
+          "B": "[0, 2]",
+          "C": "(-∞, 5)",
+          "D": "(2, 5)"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_018",
+      "content": "Phương trình tham số của đường thẳng đi qua A(3, -1) và có vector chỉ phương u=(-2, 5) là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương trình đường thẳng",
+        "sub_topic": [
+          "Viết phương trình tham số của đường thẳng"
+        ],
+        "question_type": "Lập phương trình đường thẳng",
+        "cognitive_skills": ["Ghi nhớ", "Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "{x = 3 - 2t; y = -1 + 5t}",
+          "B": "{x = -2 + 3t; y = 5 - t}",
+          "C": "{x = 3 + 2t; y = -1 - 5t}",
+          "D": "{x = 3 + 5t; y = -1 - 2t}"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_ALG10_019",
+      "content": "Hệ phương trình {x + y + z = 6; x + 2y + 3z = 14; 2x - y - z = -2} có nghiệm là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hệ phương trình",
+        "sub_topic": [
+          "Giải hệ ba phương trình bậc nhất ba ẩn"
+        ],
+        "question_type": "Giải hệ phương trình",
+        "cognitive_skills": ["Khả năng Áp dụng", "Sự Kiên trì"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "(1, 2, 3)",
+          "B": "(3, 2, 1)",
+          "C": "(1, 3, 2)",
+          "D": "Vô nghiệm"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_020",
+      "content": "Cho tam giác ABC đều cạnh a. Tích vô hướng AB.AC bằng:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Tích vô hướng của hai vector",
+        "sub_topic": [
+          "Công thức tính tích vô hướng"
+        ],
+        "question_type": "Tính tích vô hướng",
+        "cognitive_skills": ["Ghi nhớ", "Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "a²/2",
+          "B": "-a²/2",
+          "C": "a²",
+          "D": "0"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_ALG10_021",
+      "content": "Tìm tất cả các giá trị của tham số m để phương trình (m-1)x² - 2(m-2)x + m-3 = 0 có hai nghiệm trái dấu.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Dấu của tam thức bậc hai",
+        "sub_topic": [
+          "Điều kiện để phương trình bậc hai có hai nghiệm trái dấu (a.c < 0)"
+        ],
+        "question_type": "Tìm tham số thỏa mãn điều kiện về dấu của nghiệm",
+        "cognitive_skills": ["Khả năng Áp dụng", "Tư duy Biện luận"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "1 < m < 3",
+          "B": "m < 1 hoặc m > 3",
+          "C": "m = 1 hoặc m = 3",
+          "D": "m > 3"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_022",
+      "content": "Cho tam giác ABC có A(1, 2), B(-3, 0), C(5, 4). Tìm tọa độ chân đường cao H kẻ từ A của tam giác ABC.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương pháp tọa độ trong mặt phẳng",
+        "sub_topic": [
+          "Viết phương trình đường thẳng BC",
+          "Viết phương trình đường cao AH đi qua A và vuông góc với BC",
+          "Giải hệ phương trình tìm giao điểm H"
+        ],
+        "question_type": "Xác định tọa độ điểm đặc biệt trong tam giác",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Khả năng Áp dụng", "Độ chính xác & Cẩn thận"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "H(1, 2)",
+          "B": "H(9/5, 8/5)",
+          "C": "H(7/5, 6/5)",
+          "D": "H(2, 2.5)"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG10_023",
+      "content": "Tìm giá trị nhỏ nhất của hàm số y = x² - 4x + 7 trên đoạn [0, 3].",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hàm số bậc hai",
+        "sub_topic": [
+          "Khảo sát sự biến thiên của hàm số bậc hai",
+          "Tìm giá trị lớn nhất, nhỏ nhất trên một đoạn"
+        ],
+        "question_type": "Tìm giá trị lớn nhất/nhỏ nhất của hàm số",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Khả năng Áp dụng"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "3",
+          "B": "4",
+          "C": "7",
+          "D": "-1"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_024",
+      "content": "Trong mặt phẳng Oxy, cho đường tròn (C): x² + y² - 4x + 6y - 3 = 0. Viết phương trình tiếp tuyến của (C) tại điểm M(2, 1).",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương trình đường tròn",
+        "sub_topic": [
+          "Xác định tâm đường tròn",
+          "Tìm vector pháp tuyến của tiếp tuyến (vector IM)",
+          "Viết phương trình đường thẳng đi qua điểm và có vector pháp tuyến"
+        ],
+        "question_type": "Viết phương trình tiếp tuyến",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Tư duy Không gian", "Khả năng Áp dụng"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "y - 1 = 0",
+          "B": "x - 2 = 0",
+          "C": "x + 4y - 6 = 0",
+          "D": "4y - 4 = 0"
+        },
+        "correct_answer": "D"
+      }
+    },
+    {
+      "id": "MATH_ALG10_025",
+      "content": "Giải hệ phương trình {x² + y² = 5; xy = 2}.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hệ phương trình",
+        "sub_topic": [
+          "Hệ phương trình đối xứng loại 1",
+          "Phương pháp đặt ẩn phụ tổng-tích"
+        ],
+        "question_type": "Giải hệ phương trình",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Khả năng Áp dụng"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "Hệ có 2 nghiệm",
+          "B": "Hệ có 4 nghiệm",
+          "C": "Hệ vô nghiệm",
+          "D": "Hệ có 1 nghiệm"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG10_031",
+      "content": "Tìm Parabol (P): y = ax² + bx + 2 biết (P) đi qua M(1, 5) và có trục đối xứng x = -1/4.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hàm số bậc hai",
+        "sub_topic": [
+          "Thay tọa độ điểm vào phương trình parabol",
+          "Sử dụng công thức trục đối xứng x = -b/2a",
+          "Lập và giải hệ hai phương trình bậc nhất hai ẩn a, b"
+        ],
+        "question_type": "Xác định Parabol",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Sự Kiên trì"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "y = 2x² + x + 2",
+          "B": "y = 4x² + 2x + 2",
+          "C": "y = 2x² - x + 2",
+          "D": "y = 4x² - 2x + 2"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_032",
+      "content": "Trong mặt phẳng Oxy, cho tam giác ABC có A(1,0), B(-3,-2), C(-1,4). Tìm tọa độ trực tâm H của tam giác.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương pháp tọa độ trong mặt phẳng",
+        "sub_topic": [
+          "Tìm vector chỉ phương và vector pháp tuyến",
+          "Viết phương trình tổng quát của hai đường cao",
+          "Giải hệ phương trình tìm giao điểm"
+        ],
+        "question_type": "Xác định tọa độ điểm đặc biệt trong tam giác",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Sự Kiên trì", "Độ chính xác & Cẩn thận"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "H(-3, 2)",
+          "B": "H(3, -2)",
+          "C": "H(-3, -2)",
+          "D": "H(3, 2)"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_ALG10_033",
+      "content": "Tìm m để phương trình |x² - 1| = m² - m + 1 có 4 nghiệm thực phân biệt.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hàm số bậc hai",
+        "sub_topic": [
+          "Biện luận số nghiệm phương trình bằng phương pháp đồ thị",
+          "Khảo sát và vẽ đồ thị hàm số y = |f(x)|",
+          "Giải bất phương trình bậc hai theo m"
+        ],
+        "question_type": "Biện luận số nghiệm phương trình chứa trị tuyệt đối",
+        "cognitive_skills": ["Tư duy Biện luận", "Tư duy Không gian", "Tư duy Phân tích - Tổng hợp"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "0 < m < 1",
+          "B": "m < 0 hoặc m > 1",
+          "C": "m > 1/2",
+          "D": "1/2 < m < 1"
+        },
+        "correct_answer": "D"
+      }
+    },
+    {
+      "id": "MATH_GEO10_034",
+      "content": "Cho tam giác ABC. Tìm điểm M sao cho vector v = MA + MB + 2MC có độ dài nhỏ nhất.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Vector",
+        "sub_topic": [
+          "Phương pháp tâm tỉ cự",
+          "Xác định điểm cố định I thỏa mãn IA + IB + 2IC = 0",
+          "Bài toán cực trị vector"
+        ],
+        "question_type": "Tìm điểm thỏa mãn điều kiện cực trị vector",
+        "cognitive_skills": ["Tư duy Trừu tượng", "Tư duy Sáng tạo"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "M là trọng tâm tam giác ABC.",
+          "B": "M là đỉnh thứ tư của hình bình hành ABCM.",
+          "C": "M là trung điểm của đoạn thẳng nối C với trung điểm của AB.",
+          "D": "M là trung điểm của CG, với G là trọng tâm tam giác ABC."
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_ALG10_035",
+      "content": "Cho mẫu số liệu: 10, 8, 6, 2, 4. Phương sai của mẫu số liệu là bao nhiêu?",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Thống kê",
+        "sub_topic": [
+          "Tính số trung bình cộng",
+          "Áp dụng công thức tính phương sai"
+        ],
+        "question_type": "Tính số đặc trưng của mẫu số liệu",
+        "cognitive_skills": ["Ghi nhớ", "Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "8",
+          "B": "10",
+          "C": "6",
+          "D": "2√2"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_036",
+      "content": "Trong mặt phẳng Oxy, khoảng cách từ điểm M(3, -4) đến đường thẳng d: 3x - 4y - 1 = 0 là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương trình đường thẳng",
+        "sub_topic": [
+          "Áp dụng công thức khoảng cách từ điểm đến đường thẳng"
+        ],
+        "question_type": "Tính khoảng cách",
+        "cognitive_skills": ["Ghi nhớ", "Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "24",
+          "B": "24/5",
+          "C": "26/5",
+          "D": "5"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG10_037",
+      "content": "Tìm tất cả các giá trị của m để phương trình x² - 2(m+1)x + m² + 1 = 0 có hai nghiệm phân biệt.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Dấu của tam thức bậc hai",
+        "sub_topic": [
+          "Điều kiện để phương trình bậc hai có hai nghiệm phân biệt (Δ' > 0)"
+        ],
+        "question_type": "Tìm tham số thỏa mãn điều kiện về số nghiệm",
+        "cognitive_skills": ["Khả năng Áp dụng", "Tư duy Biện luận"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "m > 0",
+          "B": "m < 0",
+          "C": "m > 1/2",
+          "D": "m < 1/2"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_038",
+      "content": "Cho tam giác ABC có a=21, b=17, c=10. Chiều cao hₐ kẻ từ A là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Hệ thức lượng trong tam giác",
+        "sub_topic": [
+          "Công thức Heron để tính diện tích",
+          "Công thức S = (1/2)a.hₐ"
+        ],
+        "question_type": "Tính toán chiều cao tam giác",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Sự Kiên trì"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "8",
+          "B": "7",
+          "C": "6",
+          "D": "9"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_ALG10_039",
+      "content": "Phương trình (m² - 9)x = m - 3 vô nghiệm khi:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Phương trình quy về bậc nhất, bậc hai",
+        "sub_topic": [
+          "Biện luận phương trình bậc nhất ax = b (vô nghiệm khi a=0, b≠0)"
+        ],
+        "question_type": "Biện luận phương trình",
+        "cognitive_skills": ["Tư duy Biện luận", "Tư duy Logic"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "m = 3",
+          "B": "m = -3",
+          "C": "m = ±3",
+          "D": "m ≠ 3"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_GEO10_040",
+      "content": "Trong mặt phẳng Oxy, góc giữa hai đường thẳng d₁: x - 2y + 1 = 0 và d₂: 3x - y - 2 = 0 là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương trình đường thẳng",
+        "sub_topic": [
+          "Công thức tính góc giữa hai đường thẳng"
+        ],
+        "question_type": "Tính góc",
+        "cognitive_skills": ["Ghi nhớ", "Khả năng Áp dụng"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "30°",
+          "B": "45°",
+          "C": "60°",
+          "D": "90°"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG10_041",
+      "content": "Cho A = [m, m+2] và B = [0, 3]. Tìm m để A ⊂ B.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Mệnh đề - Tập hợp",
+        "sub_topic": [
+          "Điều kiện để tập hợp con",
+          "Giải hệ bất phương trình"
+        ],
+        "question_type": "Tìm tham số thỏa mãn quan hệ tập hợp",
+        "cognitive_skills": ["Tư duy Logic", "Khả năng Áp dụng"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "0 ≤ m ≤ 1",
+          "B": "0 ≤ m ≤ 3",
+          "C": "1 ≤ m ≤ 3",
+          "D": "m ≤ 0 hoặc m ≥ 1"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_042",
+      "content": "Trong mặt phẳng Oxy, cho tam giác ABC có A(1, 3), B(0, 1), C(-2, 2). Viết phương trình đường trung tuyến AM.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương trình đường thẳng",
+        "sub_topic": [
+          "Tìm tọa độ trung điểm",
+          "Viết phương trình đường thẳng đi qua hai điểm"
+        ],
+        "question_type": "Lập phương trình đường thẳng",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "3x - 4y + 9 = 0",
+          "B": "3x + 4y - 15 = 0",
+          "C": "x + 2y - 7 = 0",
+          "D": "x - 2y + 5 = 0"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_ALG10_043",
+      "content": "Tìm tất cả các giá trị của m để phương trình x² - 2mx + m² - m + 1 = 0 có hai nghiệm dương phân biệt.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Dấu của tam thức bậc hai",
+        "sub_topic": [
+          "Điều kiện để phương trình có hai nghiệm dương phân biệt (Δ' > 0, S > 0, P > 0)"
+        ],
+        "question_type": "Biện luận dấu của nghiệm phương trình",
+        "cognitive_skills": ["Tư duy Biện luận", "Tư duy Phân tích - Tổng hợp"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "m > 1",
+          "B": "m > 0",
+          "C": "m < 1",
+          "D": "0 < m < 1"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_044",
+      "content": "Trong mặt phẳng Oxy, cho Elip (E): x²/16 + y²/9 = 1. Tiêu cự của Elip là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Đường Elip",
+        "sub_topic": [
+          "Xác định các yếu tố của Elip",
+          "Công thức c² = a² - b²"
+        ],
+        "question_type": "Tính toán yếu tố của Elip",
+        "cognitive_skills": ["Ghi nhớ", "Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "√7",
+          "B": "7",
+          "C": "2√7",
+          "D": "14"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_ALG10_045",
+      "content": "Số nghiệm nguyên của bất phương trình (x² - x - 6) / √(x² - 4) ≤ 0 là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Dấu của tam thức bậc hai",
+        "sub_topic": [
+          "Tìm điều kiện xác định",
+          "Xét dấu của tử thức",
+          "Kết hợp điều kiện và kết quả xét dấu"
+        ],
+        "question_type": "Giải bất phương trình chứa căn",
+        "cognitive_skills": ["Tư duy Logic", "Độ chính xác & Cẩn thận"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_046",
+      "content": "Cho hình thoi ABCD cạnh a, góc BAD = 60°. Tích vô hướng AC.BD bằng:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Tích vô hướng của hai vector",
+        "sub_topic": [
+          "Tính chất hai đường chéo của hình thoi (vuông góc)"
+        ],
+        "question_type": "Tính tích vô hướng",
+        "cognitive_skills": ["Ghi nhớ", "Tư duy Không gian"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "a²",
+          "B": "a²/2",
+          "C": "0",
+          "D": "-a²"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_ALG10_047",
+      "content": "Tìm giá trị lớn nhất M và giá trị nhỏ nhất m của hàm số y = 4√(x-2) + 3√(6-x).",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Bất đẳng thức",
+        "sub_topic": [
+          "Tìm điều kiện xác định",
+          "Bất đẳng thức Bunyakovsky"
+        ],
+        "question_type": "Tìm giá trị lớn nhất/nhỏ nhất của hàm số",
+        "cognitive_skills": ["Tư duy Sáng tạo", "Khả năng Áp dụng"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "M = 10, m = 6",
+          "B": "M = 10, m = 8",
+          "C": "M = 10, m = 6√2",
+          "D": "M = 12, m = 8"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_GEO10_048",
+      "content": "Trong mặt phẳng Oxy, cho điểm A(3, 1). Viết phương trình đường thẳng d đi qua A và cắt các tia Ox, Oy lần lượt tại B, C (khác O) sao cho diện tích tam giác OBC nhỏ nhất.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương trình đường thẳng",
+        "sub_topic": [
+          "Phương trình đường thẳng theo đoạn chắn",
+          "Sử dụng điều kiện điểm thuộc đường thẳng",
+          "Áp dụng bất đẳng thức AM-GM (Cauchy)"
+        ],
+        "question_type": "Bài toán cực trị hình học tọa độ",
+        "cognitive_skills": ["Tư duy Sáng tạo", "Tư duy Phân tích - Tổng hợp"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "x/6 + y/2 = 1",
+          "B": "x/3 + y/1 = 1",
+          "C": "x/2 + y/6 = 1",
+          "D": "3x + y - 10 = 0"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_ALG10_049",
+      "content": "Cho hệ phương trình {mx + y = m+1; x + my = 2}. Tìm m để hệ có nghiệm duy nhất.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hệ phương trình",
+        "sub_topic": [
+          "Biện luận hệ phương trình bậc nhất hai ẩn",
+          "Sử dụng định thức"
+        ],
+        "question_type": "Biện luận số nghiệm của hệ phương trình",
+        "cognitive_skills": ["Tư duy Biện luận", "Khả năng Áp dụng"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "m ≠ 1",
+          "B": "m ≠ -1",
+          "C": "m ≠ 1 và m ≠ -1",
+          "D": "m = 1"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_GEO10_050",
+      "content": "Trong mặt phẳng Oxy, cho đường thẳng d: x - y = 0 và đường tròn (C): x² + y² - 8x - 2y + 7 = 0. Viết phương trình đường thẳng d' đối xứng với d qua tâm của (C).",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương pháp tọa độ trong mặt phẳng",
+        "sub_topic": [
+          "Xác định tâm đường tròn",
+          "Tính chất đối xứng qua điểm (đường thẳng đối xứng song song với đường thẳng ban đầu)",
+          "Lấy một điểm thuộc d, tìm điểm đối xứng qua tâm",
+          "Viết phương trình đường thẳng"
+        ],
+        "question_type": "Viết phương trình đường thẳng qua phép đối xứng",
+        "cognitive_skills": ["Tư duy Không gian", "Tư duy Phân tích - Tổng hợp"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "x - y + 6 = 0",
+          "B": "x - y - 6 = 0",
+          "C": "x + y - 6 = 0",
+          "D": "x + y + 6 = 0"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG10_051",
+      "content": "Tìm m để hàm số y = √(x² - 2mx + m + 2) có tập xác định là R.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Dấu của tam thức bậc hai",
+        "sub_topic": [
+          "Điều kiện để tam thức bậc hai không âm với mọi x (a > 0 và Δ' ≤ 0)"
+        ],
+        "question_type": "Tìm tham số thỏa mãn điều kiện về tập xác định",
+        "cognitive_skills": ["Tư duy Biện luận", "Khả năng Áp dụng"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "m ≤ -1 hoặc m ≥ 2",
+          "B": "-1 ≤ m ≤ 2",
+          "C": "m < -1 hoặc m > 2",
+          "D": "-1 < m < 2"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_GEO10_052",
+      "content": "Cho tam giác ABC. Gọi I, J lần lượt là trung điểm của BC, CA. Điểm M trong mặt phẳng thỏa mãn 2MA + MB + MC = 0. Mệnh đề nào sau đây đúng?",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Vector",
+        "sub_topic": [
+          "Biến đổi vector",
+          "Tính chất trung điểm"
+        ],
+        "question_type": "Xác định vị trí điểm",
+        "cognitive_skills": ["Tư duy Trừu tượng", "Tư duy Phân tích - Tổng hợp"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "M là trung điểm của AI",
+          "B": "M là trung điểm của BJ",
+          "C": "M là trọng tâm tam giác ABC",
+          "D": "M là đỉnh thứ tư của hình bình hành ABMC"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_ALG10_053",
+      "content": "Giải phương trình (x+1)√(x² - 2x + 3) = x² + 1.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Phương trình chứa căn",
+        "sub_topic": [
+          "Phương pháp đặt ẩn phụ không hoàn toàn"
+        ],
+        "question_type": "Giải phương trình vô tỉ",
+        "cognitive_skills": ["Tư duy Sáng tạo", "Sự Kiên trì"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "x = 1",
+          "B": "x = 1 hoặc x = -2",
+          "C": "x = -1",
+          "D": "x = 1 hoặc x = 2"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_054",
+      "content": "Trong mặt phẳng Oxy, cho tam giác ABC có phương trình cạnh AB là 5x - 3y + 2 = 0, đường cao qua đỉnh A và B lần lượt là 4x - 3y + 1 = 0 và 7x + 2y - 22 = 0. Viết phương trình cạnh AC.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương trình đường thẳng",
+        "sub_topic": [
+          "Tìm tọa độ các đỉnh bằng cách giải hệ phương trình",
+          "Tìm vector pháp tuyến của cạnh dựa vào vector chỉ phương của đường cao",
+          "Viết phương trình đường thẳng"
+        ],
+        "question_type": "Lập phương trình đường thẳng dựa trên các yếu tố gián tiếp",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Sự Kiên trì", "Độ chính xác & Cẩn thận"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "2x - 7y - 5 = 0",
+          "B": "2x + 7y - 5 = 0",
+          "C": "7x - 2y - 5 = 0",
+          "D": "3x + 5y - 8 = 0"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG10_055",
+      "content": "Cho a, b, c là độ dài ba cạnh của một tam giác. Bất phương trình nào sau đây luôn đúng?",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Bất đẳng thức",
+        "sub_topic": [
+          "Bất đẳng thức tam giác",
+          "Biến đổi đại số"
+        ],
+        "question_type": "Nhận biết bất đẳng thức",
+        "cognitive_skills": ["Ghi nhớ", "Tư duy Logic"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "a² + b² + c² < 2(ab + bc + ca)",
+          "B": "a² + b² + c² > 2(ab + bc + ca)",
+          "C": "a² + b² + c² = ab + bc + ca",
+          "D": "a + b ≤ c"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_056",
+      "content": "Cho tam giác ABC có góc A = 120°, AB = 1, AC = 2. Tính độ dài đường phân giác trong AD.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Hệ thức lượng trong tam giác",
+        "sub_topic": [
+          "Công thức diện tích S = (1/2)ab.sin(C)",
+          "Tính chất diện tích (S_ABC = S_ABD + S_ACD)"
+        ],
+        "question_type": "Tính toán độ dài đường phân giác",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Khả năng Áp dụng"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "2/3",
+          "B": "3/2",
+          "C": "1",
+          "D": "√3"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_ALG10_057",
+      "content": "Tập nghiệm của bất phương trình |2x - 1| ≤ x + 2 là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Dấu của tam thức bậc hai",
+        "sub_topic": [
+          "Bất phương trình dạng |A| ≤ B",
+          "Giải hệ bất phương trình"
+        ],
+        "question_type": "Giải bất phương trình chứa trị tuyệt đối",
+        "cognitive_skills": ["Khả năng Áp dụng", "Tư duy Logic"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "[-1/3, 3]",
+          "B": "[-3, 1/3]",
+          "C": "(-∞, -1/3] ∪ [3, +∞)",
+          "D": "[-1/3, +∞)"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_058",
+      "content": "Trong mặt phẳng Oxy, cho điểm I(2, 4) và hai đường thẳng d₁: 2x - y - 1 = 0, d₂: x + y - 4 = 0. Viết phương trình đường tròn có tâm I và cắt d₁ tại A, B, cắt d₂ tại C, D sao cho AB = CD.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương trình đường tròn",
+        "sub_topic": [
+          "Tính chất dây cung bằng nhau (khoảng cách từ tâm đến hai dây bằng nhau)",
+          "Công thức khoảng cách từ điểm đến đường thẳng",
+          "Viết phương trình đường tròn"
+        ],
+        "question_type": "Lập phương trình đường tròn thỏa mãn điều kiện",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Tư duy Không gian"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "(x-2)² + (y-4)² = 2",
+          "B": "(x-2)² + (y-4)² = 5/2",
+          "C": "(x-2)² + (y-4)² = 1",
+          "D": "(x-2)² + (y-4)² = 9/2"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG10_059",
+      "content": "Tìm tất cả các giá trị của m để hàm số y = (x² - 4x + m) / (x-1) xác định trên đoạn [2, 4].",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hàm số",
+        "sub_topic": [
+          "Điều kiện để hàm số phân thức xác định",
+          "Yêu cầu về vị trí của nghiệm mẫu số so với một đoạn"
+        ],
+        "question_type": "Tìm tham số thỏa mãn điều kiện về tập xác định",
+        "cognitive_skills": ["Tư duy Logic"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "m ∈ R",
+          "B": "m ≠ 1",
+          "C": "m ≠ 2",
+          "D": "m ≠ 4"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_060",
+      "content": "Cho tam giác ABC có BC=10 và góc A=30°. Bán kính đường tròn ngoại tiếp R của tam giác là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Hệ thức lượng trong tam giác",
+        "sub_topic": [
+          "Áp dụng Định lý sin"
+        ],
+        "question_type": "Tính toán bán kính đường tròn ngoại tiếp",
+        "cognitive_skills": ["Ghi nhớ", "Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "5",
+          "B": "10",
+          "C": "5/√3",
+          "D": "10√3"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG10_061",
+      "content": "Tìm giá trị của m để phương trình x² - 2(m-1)x + m² - 2m = 0 có hai nghiệm x₁, x₂ thỏa mãn |x₁ - x₂| = 2.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Dấu của tam thức bậc hai",
+        "sub_topic": [
+          "Điều kiện để phương trình có hai nghiệm phân biệt",
+          "Hệ thức Vi-ét",
+          "Biến đổi biểu thức (x₁-x₂)² = (x₁+x₂)² - 4x₁x₂"
+        ],
+        "question_type": "Tìm tham số thỏa mãn hệ thức của nghiệm",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Sự Kiên trì"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "m = 0",
+          "B": "m = 1",
+          "C": "m = 2",
+          "D": "m = 3"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_GEO10_062",
+      "content": "Trong mặt phẳng Oxy, cho hai điểm A(1, 2) và B(-3, 4). Viết phương trình đường trung trực của đoạn thẳng AB.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương trình đường thẳng",
+        "sub_topic": [
+          "Tìm tọa độ trung điểm",
+          "Tìm vector pháp tuyến (vector AB)",
+          "Viết phương trình đường thẳng"
+        ],
+        "question_type": "Lập phương trình đường thẳng",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Khả năng Áp dụng"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "2x - y + 5 = 0",
+          "B": "2x - y - 1 = 0",
+          "C": "x + 2y - 5 = 0",
+          "D": "x + 2y + 1 = 0"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_ALG10_063",
+      "content": "Số nghiệm của phương trình x² + 3x + 1 = (x+3)√(x²+1) là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Phương trình chứa căn",
+        "sub_topic": [
+          "Phương pháp đặt ẩn phụ t = √(x²+1)",
+          "Giải phương trình bậc hai theo ẩn mới"
+        ],
+        "question_type": "Giải phương trình vô tỉ",
+        "cognitive_skills": ["Tư duy Sáng tạo", "Tư duy Phân tích - Tổng hợp"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "0",
+          "B": "1",
+          "C": "2",
+          "D": "3"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_GEO10_064",
+      "content": "Trong mặt phẳng Oxy, cho tam giác ABC có A(-1, 2), B(2, 0), C(-3, 1). Tính độ dài đường cao kẻ từ A.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương pháp tọa độ trong mặt phẳng",
+        "sub_topic": [
+          "Viết phương trình đường thẳng BC",
+          "Tính khoảng cách từ điểm A đến đường thẳng BC"
+        ],
+        "question_type": "Tính toán độ dài trong hình học tọa độ",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Sự Kiên trì"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "√26",
+          "B": "7/√26",
+          "C": "14/√26",
+          "D": "26"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG10_065",
+      "content": "Tìm tất cả các giá trị của tham số m để phương trình (m-2)x² - 2mx + m + 3 = 0 có hai nghiệm dương.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Dấu của tam thức bậc hai",
+        "sub_topic": [
+          "Điều kiện để phương trình có hai nghiệm dương (Δ' ≥ 0, S > 0, P > 0)"
+        ],
+        "question_type": "Biện luận dấu của nghiệm phương trình",
+        "cognitive_skills": ["Tư duy Biện luận", "Tư duy Phân tích - Tổng hợp"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "m > 6",
+          "B": "2 < m < 6",
+          "C": "-3 < m < 2",
+          "D": "2 < m ≤ 6"
+        },
+        "correct_answer": "D"
+      }
+    },
+    {
+      "id": "MATH_GEO10_066",
+      "content": "Cho hình chữ nhật ABCD có AB = 2a, AD = a. Tích vô hướng AB.AC bằng:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Tích vô hướng của hai vector",
+        "sub_topic": [
+          "Phân tích vector",
+          "Tính chất hình chữ nhật"
+        ],
+        "question_type": "Tính tích vô hướng",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Tư duy Không gian"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "2a²",
+          "B": "4a²",
+          "C": "a²√5",
+          "D": "0"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG10_067",
+      "content": "Giá trị của tham số m để phương trình x² + (3-m)x + 2(m-5) = 0 có hai nghiệm x₁, x₂ thỏa mãn x₁ + 2x₂ = 1 là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Dấu của tam thức bậc hai",
+        "sub_topic": [
+          "Hệ thức Vi-ét",
+          "Giải hệ phương trình ba ẩn (x₁, x₂, m)"
+        ],
+        "question_type": "Tìm tham số thỏa mãn hệ thức của nghiệm",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Sự Kiên trì"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "m = 5",
+          "B": "m = 6",
+          "C": "m = 7",
+          "D": "Không có m"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_GEO10_068",
+      "content": "Trong mặt phẳng Oxy, cho đường tròn (C): x² + y² = 25 và điểm M(1, -2). Một đường thẳng d đi qua M cắt (C) tại hai điểm A và B. Tìm tọa độ M để dây cung AB ngắn nhất.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương trình đường tròn",
+        "sub_topic": [
+          "Cực trị hình học (dây cung ngắn nhất khi khoảng cách từ tâm đến dây lớn nhất)",
+          "Đường thẳng đi qua M và vuông góc với OM"
+        ],
+        "question_type": "Bài toán cực trị liên quan đến dây cung",
+        "cognitive_skills": ["Tư duy Không gian", "Tư duy Phân tích - Tổng hợp"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "d: x - 2y - 5 = 0",
+          "B": "d: x + 2y + 3 = 0",
+          "C": "d: 2x + y = 0",
+          "D": "d: x - y - 3 = 0"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_ALG10_069",
+      "content": "Trong một cuộc thi, mỗi thí sinh phải trả lời 10 câu hỏi. Mỗi câu trả lời đúng được 5 điểm, mỗi câu sai bị trừ 2 điểm, câu không trả lời không được điểm. Một học sinh được 26 điểm. Hỏi học sinh đó đã trả lời sai bao nhiêu câu?",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hệ phương trình",
+        "sub_topic": [
+          "Lập hệ phương trình với nghiệm nguyên"
+        ],
+        "question_type": "Giải bài toán thực tế",
+        "cognitive_skills": ["Tư duy Logic", "Khả năng Áp dụng"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_GEO10_070",
+      "content": "Điểm kiểm tra của 10 học sinh là: 5, 6, 6, 7, 8, 8, 8, 9, 9, 10. Số trung vị (Median) của mẫu số liệu này là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Thống kê",
+        "sub_topic": [
+          "Sắp xếp mẫu số liệu",
+          "Tìm số trung vị"
+        ],
+        "question_type": "Tính số đặc trưng của mẫu số liệu",
+        "cognitive_skills": ["Ghi nhớ", "Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "8",
+          "B": "7.5",
+          "C": "8.5",
+          "D": "7"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_ALG10_071",
+      "content": "Tìm tất cả các giá trị của tham số m để phương trình (m-1)x⁴ - 2(m-3)x² + m-2 = 0 có bốn nghiệm phân biệt.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Phương trình quy về bậc hai",
+        "sub_topic": [
+          "Phương pháp đặt ẩn phụ cho phương trình trùng phương",
+          "Điều kiện để phương trình bậc hai có hai nghiệm dương phân biệt (Δ > 0, S > 0, P > 0)"
+        ],
+        "question_type": "Biện luận số nghiệm của phương trình trùng phương",
+        "cognitive_skills": ["Tư duy Biện luận", "Tư duy Phân tích - Tổng hợp", "Sự Kiên trì"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "1 < m < 2",
+          "B": "m > 3",
+          "C": "2 < m < 3",
+          "D": "m > 2"
+        },
+        "correct_answer": "D"
+      }
+    },
+    {
+      "id": "MATH_GEO10_072",
+      "content": "Trong mặt phẳng Oxy, cho tam giác ABC có A(2, -1), B(1, -2), C(-1, 3). Tìm tọa độ tâm I của đường tròn ngoại tiếp tam giác ABC.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương pháp tọa độ trong mặt phẳng",
+        "sub_topic": [
+          "Lập phương trình hai đường trung trực của hai cạnh",
+          "Giải hệ phương trình tìm giao điểm"
+        ],
+        "question_type": "Xác định tọa độ tâm đường tròn ngoại tiếp",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Sự Kiên trì", "Độ chính xác & Cẩn thận"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "I(-1, -1)",
+          "B": "I(-2, 1)",
+          "C": "I(2, 0)",
+          "D": "I(0, 1)"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_ALG10_073",
+      "content": "Cho a, b, c là các số thực không âm thỏa mãn a+b+c=1. Tìm giá trị lớn nhất của biểu thức P = ab + bc + ca - 2abc.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Bất đẳng thức",
+        "sub_topic": [
+          "Bất đẳng thức Schur",
+          "Kỹ thuật dồn biến"
+        ],
+        "question_type": "Tìm giá trị lớn nhất của biểu thức",
+        "cognitive_skills": ["Tư duy Sáng tạo", "Tư duy Trừu tượng", "Tư duy Phân tích - Tổng hợp"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "7/27",
+          "B": "1/4",
+          "C": "1/3",
+          "D": "8/27"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_074",
+      "content": "Trong mặt phẳng Oxy, cho đường thẳng d: 3x - 4y + 1 = 0 và điểm I(1, 1). Viết phương trình đường tròn (C) có tâm I và cắt d tại hai điểm A, B sao cho AB = 2√3.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương trình đường tròn",
+        "sub_topic": [
+          "Tính khoảng cách từ tâm đến đường thẳng",
+          "Sử dụng định lý Pytago để tìm bán kính R² = d(I,d)² + (AB/2)²",
+          "Viết phương trình đường tròn"
+        ],
+        "question_type": "Lập phương trình đường tròn thỏa mãn điều kiện",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Tư duy Không gian", "Sự Kiên trì"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "(x-1)² + (y-1)² = 4",
+          "B": "(x-1)² + (y-1)² = 3",
+          "C": "(x-1)² + (y-1)² = 15",
+          "D": "(x-1)² + (y-1)² = 1"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG10_075",
+      "content": "Tìm tất cả các giá trị của tham số m để phương trình √(x² - 2x + m) = x - 1 có đúng một nghiệm.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Phương trình chứa căn",
+        "sub_topic": [
+          "Phương trình dạng √(A) = B",
+          "Biện luận số nghiệm của hệ phương trình và bất phương trình"
+        ],
+        "question_type": "Biện luận số nghiệm của phương trình vô tỉ",
+        "cognitive_skills": ["Tư duy Biện luận", "Tư duy Phân tích - Tổng hợp"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "m = 1",
+          "B": "m > 1",
+          "C": "m < 1",
+          "D": "m ≥ 1"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_076",
+      "content": "Cho tam giác ABC có A(3, 5), B(1, 2), C(5, 2). Tọa độ tâm đường tròn ngoại tiếp tam giác ABC là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương pháp tọa độ trong mặt phẳng",
+        "sub_topic": [
+          "Nhận dạng tam giác cân",
+          "Tâm đường tròn ngoại tiếp nằm trên đường trung trực của cạnh đáy"
+        ],
+        "question_type": "Xác định tọa độ tâm đường tròn ngoại tiếp",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Tư duy Không gian"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "I(3, 2)",
+          "B": "I(3, 3)",
+          "C": "I(4, 5/2)",
+          "D": "I(3, 7/2)"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG10_077",
+      "content": "Giá trị nhỏ nhất của hàm số y = |x² - 2x - 3| trên đoạn [-2, 2] là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hàm số bậc hai",
+        "sub_topic": [
+          "Khảo sát hàm số bậc hai trên một đoạn",
+          "Tìm giá trị lớn nhất, nhỏ nhất của hàm chứa trị tuyệt đối"
+        ],
+        "question_type": "Tìm giá trị nhỏ nhất của hàm số",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Sự Kiên trì"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "0",
+          "B": "3",
+          "C": "4",
+          "D": "5"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_078",
+      "content": "Trong mặt phẳng Oxy, cho điểm A(2, 5) và đường thẳng d: 3x + 4y - 1 = 0. Viết phương trình đường tròn có tâm A và tiếp xúc với d.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương trình đường tròn",
+        "sub_topic": [
+          "Tính bán kính bằng khoảng cách từ tâm đến đường thẳng tiếp xúc",
+          "Viết phương trình đường tròn"
+        ],
+        "question_type": "Lập phương trình đường tròn",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Khả năng Áp dụng"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "(x-2)² + (y-5)² = 5",
+          "B": "(x-2)² + (y-5)² = 25",
+          "C": "(x-2)² + (y-5)² = 10",
+          "D": "(x-2)² + (y-5)² = 1"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG10_079",
+      "content": "Tìm tất cả các giá trị của m để phương trình (m-2)x + 2m = 4 có nghiệm duy nhất x > 1.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Phương trình quy về bậc nhất, bậc hai",
+        "sub_topic": [
+          "Giải và biện luận phương trình bậc nhất",
+          "Giải bất phương trình chứa tham số"
+        ],
+        "question_type": "Tìm tham số thỏa mãn điều kiện về nghiệm",
+        "cognitive_skills": ["Tư duy Biện luận", "Tư duy Logic"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "2 < m < 3",
+          "B": "m < 2",
+          "C": "m > 3",
+          "D": "m < 2 hoặc m > 3"
+        },
+        "correct_answer": "D"
+      }
+    },
+    {
+      "id": "MATH_GEO10_080",
+      "content": "Cho tam giác ABC có A(1, -2), B(-3, 0), C(5, 2). Gọi D là chân đường phân giác trong của góc A. Tọa độ điểm D là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương pháp tọa độ trong mặt phẳng",
+        "sub_topic": [
+          "Tính chất đường phân giác trong tam giác (DB/DC = AB/AC)",
+          "Công thức chia đoạn thẳng theo tỉ lệ"
+        ],
+        "question_type": "Xác định tọa độ điểm đặc biệt trong tam giác",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Sự Kiên trì"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "D(1, 1)",
+          "B": "D(1/3, 4/3)",
+          "C": "D(2, 1)",
+          "D": "D(1, 4/3)"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG10_081",
+      "content": "Tìm tất cả các giá trị của m để bất phương trình (x-m)/(x-1) > 0 nghiệm đúng với mọi x ∈ [2, 3].",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Dấu của tam thức bậc hai",
+        "sub_topic": [
+          "Xét dấu của một thương",
+          "Yêu cầu về vị trí của nghiệm so với một đoạn"
+        ],
+        "question_type": "Tìm tham số để bất phương trình nghiệm đúng trên một đoạn",
+        "cognitive_skills": ["Tư duy Biện luận", "Tư duy Logic"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "m < 1",
+          "B": "m > 3",
+          "C": "1 ≤ m < 2",
+          "D": "m < 2"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_082",
+      "content": "Cho tam giác ABC. Gọi M, N, P lần lượt là trung điểm của BC, CA, AB. Mệnh đề nào sau đây sai?",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Vector",
+        "sub_topic": [
+          "Tính chất vector trung điểm"
+        ],
+        "question_type": "Nhận biết hệ thức vector",
+        "cognitive_skills": ["Ghi nhớ", "Tư duy Không gian"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "AP + AN = AM",
+          "B": "PB + MC = PN",
+          "C": "AM + BN + CP = 0",
+          "D": "AB + AC = 2AM"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG10_083",
+      "content": "Giá trị nhỏ nhất của hàm số y = x + 4/x với x > 0 là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Bất đẳng thức",
+        "sub_topic": [
+          "Bất đẳng thức AM-GM (Cauchy)"
+        ],
+        "question_type": "Tìm giá trị nhỏ nhất của hàm số",
+        "cognitive_skills": ["Ghi nhớ", "Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "2",
+          "B": "4",
+          "C": "2√2",
+          "D": "5"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_GEO10_084",
+      "content": "Trong mặt phẳng Oxy, cho Elip (E) có phương trình x²/100 + y²/36 = 1. Tỷ số e = c/a được gọi là tâm sai của Elip. Tính tâm sai của (E).",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Đường Elip",
+        "sub_topic": [
+          "Xác định các yếu tố của Elip",
+          "Tính tâm sai"
+        ],
+        "question_type": "Tính toán yếu tố của Elip",
+        "cognitive_skills": ["Ghi nhớ", "Khả năng Áp dụng"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "e = 3/5",
+          "B": "e = 4/5",
+          "C": "e = 5/3",
+          "D": "e = 8/10"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG10_085",
+      "content": "Hệ phương trình {x + xy + y = 11; x²y + xy² = 30} có bao nhiêu nghiệm?",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hệ phương trình",
+        "sub_topic": [
+          "Hệ phương trình đối xứng loại 1",
+          "Phương pháp đặt ẩn phụ tổng-tích"
+        ],
+        "question_type": "Giải hệ phương trình",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Sự Kiên trì"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4"
+        },
+        "correct_answer": "D"
+      }
+    },
+    {
+      "id": "MATH_GEO10_086",
+      "content": "Trong mặt phẳng Oxy, cho hai đường thẳng d₁: x+y-1=0 và d₂: x-3y+3=0. Viết phương trình đường thẳng đi qua giao điểm của d₁ và d₂ và vuông góc với đường thẳng d₃: x+y+1=0.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương trình đường thẳng",
+        "sub_topic": [
+          "Tìm giao điểm của hai đường thẳng",
+          "Tìm vector pháp tuyến của đường thẳng mới",
+          "Viết phương trình đường thẳng"
+        ],
+        "question_type": "Lập phương trình đường thẳng",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Sự Kiên trì"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "x - y + 1 = 0",
+          "B": "x - y - 1 = 0",
+          "C": "x + y - 1 = 0",
+          "D": "x + y + 1 = 0"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_ALG10_087",
+      "content": "Tìm tất cả các giá trị của m để phương trình x² - 2|x| + 1 = m có 4 nghiệm phân biệt.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Phương trình quy về bậc hai",
+        "sub_topic": [
+          "Đặt ẩn phụ t = |x|",
+          "Biện luận số nghiệm dương của phương trình bậc hai"
+        ],
+        "question_type": "Biện luận số nghiệm phương trình",
+        "cognitive_skills": ["Tư duy Biện luận", "Tư duy Phân tích - Tổng hợp"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "0 < m < 1",
+          "B": "m = 1",
+          "C": "m > 1",
+          "D": "m > 0"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_088",
+      "content": "Cho tam giác ABC có AB=c, BC=a, CA=b và S là diện tích. Mệnh đề nào sau đây đúng?",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Hệ thức lượng trong tam giác",
+        "sub_topic": [
+          "Công thức tính bán kính đường tròn ngoại tiếp"
+        ],
+        "question_type": "Nhận biết công thức",
+        "cognitive_skills": ["Ghi nhớ"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "S = abc/R",
+          "B": "S = abc/2R",
+          "C": "S = abc/4R",
+          "D": "S = 4R/abc"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_ALG10_089",
+      "content": "Cho x, y là hai số thực thay đổi thỏa mãn x² + y² = 2. Tìm giá trị lớn nhất của biểu thức P = 2(x+y) - xy.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hệ phương trình",
+        "sub_topic": [
+          "Phương pháp đặt ẩn phụ tổng-tích",
+          "Điều kiện có nghiệm của ẩn phụ (S² ≥ 4P)",
+          "Khảo sát hàm số theo ẩn phụ"
+        ],
+        "question_type": "Tìm giá trị lớn nhất của biểu thức có điều kiện",
+        "cognitive_skills": ["Tư duy Sáng tạo", "Tư duy Phân tích - Tổng hợp", "Tư duy Trừu tượng"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "5/2",
+          "B": "3",
+          "C": "9/2",
+          "D": "5"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_GEO10_090",
+      "content": "Trong mặt phẳng Oxy, cho hai điểm A(2, 5), B(-1, -1). Tìm điểm M trên đường thẳng d: y = x - 2 sao cho biểu thức P = |3MA - 2MB| (độ lớn của vector) đạt giá trị nhỏ nhất.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Vector",
+        "sub_topic": [
+          "Phương pháp tâm tỉ cự",
+          "Tham số hóa tọa độ điểm",
+          "Tối ưu hóa biểu thức khoảng cách"
+        ],
+        "question_type": "Bài toán cực trị vector và tọa độ",
+        "cognitive_skills": ["Tư duy Sáng tạo", "Tư duy Phân tích - Tổng hợp", "Tư duy Trừu tượng"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "M(-4, -6)",
+          "B": "M(8, 6)",
+          "C": "M(1, -1)",
+          "D": "M(-1, -3)"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_ALG10_091",
+      "content": "Tìm tất cả các giá trị của m để hàm số y = (x² - 2mx + m+2)/(x-m) xác định trên khoảng (0, 1).",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hàm số",
+        "sub_topic": [
+          "Điều kiện để hàm số phân thức xác định",
+          "Yêu cầu về vị trí của nghiệm mẫu số so với một khoảng"
+        ],
+        "question_type": "Tìm tham số thỏa mãn điều kiện về tập xác định",
+        "cognitive_skills": ["Tư duy Biện luận", "Tư duy Logic"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "m ≤ 0 hoặc m ≥ 1",
+          "B": "0 < m < 1",
+          "C": "m < 0 hoặc m > 1",
+          "D": "m ≠ 0 và m ≠ 1"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_092",
+      "content": "Trong mặt phẳng Oxy, cho hình chữ nhật ABCD có tâm I(1/2, 0). Phương trình đường thẳng AB là x - 2y + 2 = 0 và AB = 2AD. Tìm tọa độ đỉnh A biết A có hoành độ âm.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương pháp tọa độ trong mặt phẳng",
+        "sub_topic": [
+          "Tính khoảng cách từ tâm đến cạnh",
+          "Mối liên hệ giữa các kích thước của hình chữ nhật",
+          "Viết phương trình đường thẳng AD",
+          "Giải hệ phương trình tìm tọa độ"
+        ],
+        "question_type": "Xác định tọa độ đỉnh của đa giác đặc biệt",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Sự Kiên trì", "Tư duy Không gian"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "A(-2, 0)",
+          "B": "A(-1, 1/2)",
+          "C": "A(-4, -1)",
+          "D": "A(-2, 1)"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_ALG10_093",
+      "content": "Cho phương trình x² - 2(m-1)x + m² - 4 = 0. Tìm m để phương trình có hai nghiệm dương phân biệt x₁, x₂ sao cho biểu thức T = 1/x₁ + 1/x₂ đạt giá trị lớn nhất.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Dấu của tam thức bậc hai",
+        "sub_topic": [
+          "Điều kiện để phương trình có hai nghiệm dương phân biệt",
+          "Hệ thức Vi-ét",
+          "Biến đổi và khảo sát hàm số theo tham số m trên một miền"
+        ],
+        "question_type": "Tối ưu hóa biểu thức nghiệm theo tham số",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Tư duy Biện luận", "Sự Kiên trì"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "m = 2",
+          "B": "m = 5/2",
+          "C": "m = 3",
+          "D": "Không tồn tại m"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_GEO10_094",
+      "content": "Giá trị của biểu thức P = sin(10°)sin(50°)sin(70°) là:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Giá trị lượng giác của một góc",
+        "sub_topic": [
+          "Công thức nhân ba",
+          "Biến đổi tích thành tổng"
+        ],
+        "question_type": "Tính giá trị biểu thức lượng giác",
+        "cognitive_skills": ["Tư duy Sáng tạo", "Ghi nhớ"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "1/2",
+          "B": "1/4",
+          "C": "1/8",
+          "D": "√3/8"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_ALG10_095",
+      "content": "Cho a, b, c > 0. Tìm giá trị nhỏ nhất của biểu thức P = a/(b+c) + b/(c+a) + c/(a+b).",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Bất đẳng thức",
+        "sub_topic": [
+          "Bất đẳng thức Nesbitt (Hệ quả của Cauchy-Schwarz hoặc AM-GM)"
+        ],
+        "question_type": "Chứng minh và áp dụng bất đẳng thức",
+        "cognitive_skills": ["Ghi nhớ", "Tư duy Trừu tượng"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "1",
+          "B": "3/2",
+          "C": "2",
+          "D": "5/2"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_GEO10_096",
+      "content": "Trong mặt phẳng Oxy, cho tam giác ABC có trực tâm H(2, 1) và tâm đường tròn ngoại tiếp I(1, 0). Biết trung điểm M của cạnh BC nằm trên đường thẳng d: x - 2y - 1 = 0. Tìm tọa độ M.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương pháp tọa độ trong mặt phẳng",
+        "sub_topic": [
+          "Đường thẳng Euler (quan hệ giữa H, I, G)",
+          "Tính chất vector AH = 2IM",
+          "Tham số hóa tọa độ điểm",
+          "Giải hệ phương trình"
+        ],
+        "question_type": "Xác định tọa độ điểm dựa trên các tính chất hình học nâng cao",
+        "cognitive_skills": ["Tư duy Sáng tạo", "Tư duy Phân tích - Tổng hợp", "Ghi nhớ"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "M(3, 1)",
+          "B": "M(-1, -1)",
+          "C": "M(5, 2)",
+          "D": "M(2, 1/2)"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_ALG10_097",
+      "content": "Tìm tất cả các giá trị của m để phương trình |x² - 2x - 3| = m có đúng 3 nghiệm phân biệt.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Hàm số bậc hai",
+        "sub_topic": [
+          "Khảo sát và vẽ đồ thị hàm số bậc hai",
+          "Phép biến đổi đồ thị chứa dấu giá trị tuyệt đối y = |f(x)|",
+          "Biện luận số nghiệm của phương trình bằng phương pháp đồ thị"
+        ],
+        "question_type": "Biện luận số nghiệm phương trình chứa trị tuyệt đối",
+        "cognitive_skills": ["Tư duy Không gian", "Tư duy Biện luận", "Tư duy Phân tích - Tổng hợp"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "m = 0",
+          "B": "m = 3",
+          "C": "m = 4",
+          "D": "m > 4"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_GEO10_098",
+      "content": "Trong mặt phẳng Oxy, cho đường tròn (C): (x-1)² + (y-2)² = 4. Tìm điểm M trên đường thẳng d: y = -3 sao cho từ M kẻ được hai tiếp tuyến MA, MB đến (C) (A, B là tiếp điểm) và góc AMB bằng 60°.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương trình đường tròn",
+        "sub_topic": [
+          "Tính chất hình học của hai tiếp tuyến cắt nhau (MO là phân giác)",
+          "Hệ thức lượng trong tam giác vuông",
+          "Tham số hóa tọa độ điểm",
+          "Giải phương trình khoảng cách"
+        ],
+        "question_type": "Tìm điểm thỏa mãn điều kiện về góc trong hình học tọa độ",
+        "cognitive_skills": ["Tư duy Không gian", "Tư duy Phân tích - Tổng hợp", "Sự Kiên trì"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "M(1±√39, -3)",
+          "B": "M(1±√21, -3)",
+          "C": "M(1, -3)",
+          "D": "Không tồn tại M"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG10_099",
+      "content": "Giải phương trình: 2x² - 11x + 21 = 3√(4x - 8).",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Phương trình chứa căn",
+        "sub_topic": [
+          "Tìm điều kiện xác định",
+          "Phương pháp nhân liên hợp",
+          "Phân tích đa thức thành nhân tử",
+          "Giải và đối chiếu nghiệm"
+        ],
+        "question_type": "Giải phương trình vô tỉ bằng phương pháp nâng cao",
+        "cognitive_skills": ["Tư duy Sáng tạo", "Sự Kiên trì", "Tư duy Phân tích - Tổng hợp"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "x = 3",
+          "B": "x = 4",
+          "C": "x = 3 hoặc x = 4",
+          "D": "x = 17/2"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_GEO10_100",
+      "content": "Trong mặt phẳng Oxy, cho Elip (E): x²/25 + y²/9 = 1. Tìm điểm M trên (E) sao cho MF₁ + 3MF₂ đạt giá trị lớn nhất, với F₁, F₂ là hai tiêu điểm của (E).",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Đường Elip",
+        "sub_topic": [
+          "Định nghĩa Elip (MF₁ + MF₂ = 2a)",
+          "Biểu diễn một khoảng cách qua khoảng cách còn lại",
+          "Tìm giá trị lớn nhất của một biểu thức trên một đoạn (dựa vào khoảng cách nhỏ nhất, lớn nhất từ một điểm đến tiêu điểm)"
+        ],
+        "question_type": "Bài toán cực trị trên đường Elip",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Tư duy Không gian", "Tư duy Sáng tạo"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "M(5, 0)",
+          "B": "M(-5, 0)",
+          "C": "M(0, 3)",
+          "D": "M(0, -3)"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_GEO10_071",
+      "content": "Trong mặt phẳng Oxy, cho tam giác ABC có A(2, 6), B(-3, -4), và C(5, 0). Viết phương trình đường tròn nội tiếp tam giác ABC.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương pháp tọa độ trong mặt phẳng",
+        "sub_topic": [
+          "Viết phương trình các đường phân giác trong",
+          "Tìm giao điểm của hai đường phân giác để xác định tâm",
+          "Tính khoảng cách từ tâm đến một cạnh để xác định bán kính",
+          "Viết phương trình đường tròn"
+        ],
+        "question_type": "Lập phương trình đường tròn nội tiếp",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Sự Kiên trì", "Độ chính xác & Cẩn thận"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "(x-2)² + y² = 10",
+          "B": "(x-2)² + (y-1)² = 10",
+          "C": "(x+1)² + y² = 5",
+          "D": "(x-2)² + (y-1)² = 5"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_ALG10_072",
+      "content": "Tìm tất cả các giá trị của tham số m để bất phương trình (m+1)x² - 2(m-1)x + 3m - 3 ≥ 0 nghiệm đúng với mọi x thuộc R.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Dấu của tam thức bậc hai",
+        "sub_topic": [
+          "Biện luận các trường hợp của hệ số a (a=0 và a≠0)",
+          "Điều kiện để tam thức bậc hai không âm với mọi x (a > 0 và Δ' ≤ 0)",
+          "Giải hệ bất phương trình theo m"
+        ],
+        "question_type": "Biện luận bất phương trình nghiệm đúng với mọi x",
+        "cognitive_skills": ["Tư duy Biện luận", "Tư duy Phân tích - Tổng hợp", "Độ chính xác & Cẩn thận"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "m ≥ 1",
+          "B": "m > 1",
+          "C": "m ≥ 3",
+          "D": "m > 3"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_GEO10_073",
+      "content": "Cho tam giác ABC có BC = a, AC = b, AB = c. Gọi M là trung điểm của BC. Độ dài của trung tuyến AM được tính bằng công thức:",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Hệ thức lượng trong tam giác",
+        "sub_topic": [
+          "Công thức độ dài đường trung tuyến"
+        ],
+        "question_type": "Nhận biết công thức",
+        "cognitive_skills": ["Ghi nhớ"],
+        "difficulty_level": "Thông hiểu (2)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "mₐ² = (2b² + 2c² - a²)/4",
+          "B": "mₐ² = (b² + c² - a²)/2",
+          "C": "mₐ² = (a² + c² - b²)/2",
+          "D": "mₐ² = (b² + c²)/2 - a²/4"
+        },
+        "correct_answer": "A"
+      }
+    },
+    {
+      "id": "MATH_ALG10_074",
+      "content": "Cho x, y là hai số thực dương. Tìm giá trị nhỏ nhất của biểu thức P = (x+y)/√xy + √xy/(x+y).",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Bất đẳng thức",
+        "sub_topic": [
+          "Bất đẳng thức AM-GM (Cauchy) cho hai số",
+          "Phương pháp đặt ẩn phụ"
+        ],
+        "question_type": "Tìm giá trị nhỏ nhất của biểu thức",
+        "cognitive_skills": ["Tư duy Sáng tạo", "Khả năng Áp dụng"],
+        "difficulty_level": "Vận dụng (3)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "2",
+          "B": "5/2",
+          "C": "3/2",
+          "D": "2√2"
+        },
+        "correct_answer": "B"
+      }
+    },
+    {
+      "id": "MATH_GEO10_098",
+      "content": "Trong mặt phẳng Oxy, cho hình vuông ABCD. Gọi M là trung điểm của BC, N là điểm trên cạnh CD sao cho CN = 2ND. Biết M(11/2, 1/2) và đường thẳng AN có phương trình 2x - y - 3 = 0. Tìm tọa độ đỉnh A.",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Phương pháp tọa độ trong mặt phẳng",
+        "sub_topic": [
+          "Phương pháp tọa độ hóa hình học phẳng",
+          "Tham số hóa tọa độ điểm",
+          "Sử dụng các tính chất của hình vuông (cạnh bằng nhau, vuông góc)",
+          "Giải hệ phương trình phức tạp"
+        ],
+        "question_type": "Xác định tọa độ đỉnh dựa trên các tính chất hình học phức hợp",
+        "cognitive_skills": ["Tư duy Sáng tạo", "Tư duy Phân tích - Tổng hợp", "Sự Kiên trì"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "A(1, -1)",
+          "B": "A(4, 5)",
+          "C": "A(2, 1) hoặc A(4, 5)",
+          "D": "A(1, -1) hoặc A(4, 5)"
+        },
+        "correct_answer": "D"
+      }
+    },
+    {
+      "id": "MATH_ALG10_099",
+      "content": "Giải phương trình: 2x² - 11x + 21 = 3√(4x - 8).",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Đại số",
+        "topic": "Phương trình chứa căn",
+        "sub_topic": [
+          "Tìm điều kiện xác định",
+          "Phương pháp nhân liên hợp",
+          "Phân tích đa thức thành nhân tử",
+          "Giải và đối chiếu nghiệm"
+        ],
+        "question_type": "Giải phương trình vô tỉ bằng phương pháp nâng cao",
+        "cognitive_skills": ["Tư duy Sáng tạo", "Sự Kiên trì", "Tư duy Phân tích - Tổng hợp"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "x = 3",
+          "B": "x = 4",
+          "C": "x = 3 hoặc x = 4",
+          "D": "x = 17/2"
+        },
+        "correct_answer": "C"
+      }
+    },
+    {
+      "id": "MATH_GEO10_100",
+      "content": "Trong mặt phẳng Oxy, cho Elip (E): x²/25 + y²/9 = 1. Tìm điểm M trên (E) sao cho MF₁ + 3MF₂ đạt giá trị lớn nhất, với F₁, F₂ là hai tiêu điểm của (E).",
+      "tags": {
+        "grade_level": 10,
+        "subject": "Toán học",
+        "domain": "Hình học",
+        "topic": "Đường Elip",
+        "sub_topic": [
+          "Định nghĩa Elip (MF₁ + MF₂ = 2a)",
+          "Biểu diễn một khoảng cách qua khoảng cách còn lại",
+          "Tìm giá trị lớn nhất của một biểu thức trên một đoạn (dựa vào khoảng cách nhỏ nhất, lớn nhất từ một điểm đến tiêu điểm)"
+        ],
+        "question_type": "Bài toán cực trị trên đường Elip",
+        "cognitive_skills": ["Tư duy Phân tích - Tổng hợp", "Tư duy Không gian", "Tư duy Sáng tạo"],
+        "difficulty_level": "Vận dụng cao (4)"
+      },
+      "answer_info": {
+        "type": "multiple_choice",
+        "options": {
+          "A": "M(5, 0)",
+          "B": "M(-5, 0)",
+          "C": "M(0, 3)",
+          "D": "M(0, -3)"
+        },
+        "correct_answer": "B"
+      }
+    }
+  ]

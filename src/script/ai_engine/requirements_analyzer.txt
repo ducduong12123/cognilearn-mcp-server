@@ -1,0 +1,19 @@
+# --- Thư viện cho Dịch vụ Phân Tích Nhận Thức ---
+
+# Framework để xây dựng API
+fastapi
+
+# Server để chạy ứng dụng FastAPI
+uvicorn[standard]
+
+# Để đọc các biến từ file .env
+python-dotenv
+
+# Client để giao tiếp với Supabase
+supabase
+
+# Để xác thực dữ liệu đầu vào
+pydantic
+
+# Thư viện chính để gọi API của Google Gemini
+google-generativeai

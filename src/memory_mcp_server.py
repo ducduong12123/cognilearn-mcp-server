@@ -19,7 +19,6 @@ def get_memory_service() -> MemoryService:
     global _memory_service_instance
     if _memory_service_instance is None:
         print("🚀 Lazily initializing CogniLearn Memory Service for the first time...")
-        # Lỗi sẽ xảy ra ở đây nếu thiếu biến môi trường, giúp gỡ lỗi dễ hơn
         _memory_service_instance = MemoryService()
         print("✅ Memory Service is now ready.")
     return _memory_service_instance
@@ -39,16 +38,13 @@ mcp = FastMCP(
     name="CogniLearn Memory Server",
     instructions="A server to manage the long-term memory for CogniLearn students.",
     lifespan=simple_lifespan,
-    port=8002,
+    port=8002, # Render sẽ nhận diện cổng này
     log_level="DEBUG"
 )
 
 # --- Tạo biến cho ứng dụng ASGI ---
 app = mcp.streamable_http_app()
-@app.get("/healthz") # Định nghĩa một endpoint HTTP GET
-async def health_check():
-    """Endpoint để Render kiểm tra sức khỏe dịch vụ."""
-    return {"status": "ok", "service": "CogniLearn MCP Server"}
+
 # --- Định nghĩa các Tools ---
 @mcp.tool()
 def add_memory(
@@ -56,7 +52,6 @@ def add_memory(
     content: str,
     metadata: dict = None,
     importance: float = 0.5
-    # Bỏ ctx đi nếu bạn đang dùng phiên bản lazy-init
 ) -> Dict[str, Any]:
     """
     Lưu một thông tin hoặc 'ký ức' mới vào bộ nhớ dài hạn cho một học sinh cụ thể.
@@ -85,7 +80,6 @@ def retrieve_similar_memories(
     user_id: str,
     query_text: str,
     top_k: int = 5
-    # Bỏ ctx đi nếu bạn đang dùng phiên bản lazy-init
 ) -> Dict[str, Any]:
     """
     Tìm kiếm và truy xuất các ký ức liên quan nhất từ bộ nhớ dài hạn của một học sinh.
@@ -112,8 +106,18 @@ def retrieve_similar_memories(
         print(f"Error in retrieve_similar_memories tool: {e}")
         return {"status": "error", "message": str(e), "memories": [], "context_text": ""}
 
-# --- Chạy Server (chỉ để kiểm tra thủ công) ---
+# --- THÊM HEALTH CHECK ENDPOINT NÀY ---
+# Đảm bảo nó được định nghĩa bằng @mcp.resource
+@mcp.resource("healthz://status") 
+async def get_healthz_status() -> dict:
+    """Endpoint để Render kiểm tra sức khỏe dịch vụ."""
+    # Bạn có thể thêm logic kiểm tra DB, AI ở đây để Health Check thông minh hơn
+    return {"status": "ok", "service": "CogniLearn MCP Server"}
+# --- KẾT THÚC THÊM HEALTH CHECK ---
+
+# --- Chạy Server (cho mục đích phát triển local) ---
 if __name__ == "__main__":
-    # LangFlow sẽ chạy file này như một module, nên khối này không được thực thi
-    # khi chạy qua LangFlow. Chúng ta sẽ dùng stdio để LangFlow giao tiếp.
-    mcp.run(transport="sse")
+    # Khi chạy local, bạn có thể dùng transport="stdio" hoặc "streamable-http".
+    # Với Render, Gunicorn sẽ chạy nó như streamable-http mặc định.
+    print("Starting MCP Server for CogniLearn (for local testing)...")
+    mcp.run(transport="stdio") # Dùng stdio để dễ gỡ lỗi local, hoặc streamable-http nếu muốn test HTTP local

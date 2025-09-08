@@ -4,6 +4,8 @@ from typing import List, Dict, Any, Optional, AsyncIterator
 from contextlib import asynccontextmanager
 from mcp.server.fastmcp import FastMCP, Context
 from mcp.server.session import ServerSession
+from starlette.applications import Starlette # Cần import này để dùng app.get trực tiếp
+from starlette.responses import JSONResponse # Cần import này để trả về JSON cho Health Check
 
 # Import MemoryService từ module đã có
 from src.core.memory_service import MemoryService
@@ -19,6 +21,7 @@ def get_memory_service() -> MemoryService:
     global _memory_service_instance
     if _memory_service_instance is None:
         print("🚀 Lazily initializing CogniLearn Memory Service for the first time...")
+        # Lỗi sẽ xảy ra ở đây nếu thiếu biến môi trường, giúp gỡ lỗi dễ hơn
         _memory_service_instance = MemoryService()
         print("✅ Memory Service is now ready.")
     return _memory_service_instance
@@ -34,16 +37,29 @@ async def simple_lifespan(server: FastMCP) -> AsyncIterator[None]:
         print("🛑 Shutting down server.")
 
 # --- Khởi tạo MCP Server ---
+# Lấy PORT từ biến môi trường $PORT của Render, mặc định là 8002 cho local nếu không có
+SERVER_PORT = int(os.getenv("PORT", "8002")) 
+
 mcp = FastMCP(
-    name="CogniLearn Memory Server",
+    name="CogniLearn_Memory_Server", # Đổi tên server không khoảng trắng để tương thích với Google Gemini
     instructions="A server to manage the long-term memory for CogniLearn students.",
     lifespan=simple_lifespan,
-    port=8002, # Render sẽ nhận diện cổng này
-    log_level="DEBUG"
+    port=SERVER_PORT, # Dùng PORT đã lấy từ biến môi trường
+    log_level="DEBUG" # Giữ DEBUG để dễ gỡ lỗi trên Render Logs
 )
 
-# --- Tạo biến cho ứng dụng ASGI ---
+# --- Tạo biến cho ứng dụng ASGI chính ---
+# Đây là ứng dụng Starlette mà FastMCP mount vào. 
+# Render (Gunicorn) sẽ tìm đến biến `app` này để chạy.
 app = mcp.streamable_http_app()
+
+# --- Định nghĩa Health Check Endpoint TRỰC TIẾP trên ứng dụng ASGI ---
+# Render sẽ gọi /healthz. Endpoint này phải trả về 200 OK.
+@app.get("/healthz")
+async def health_check():
+    """Endpoint để Render kiểm tra sức khỏe dịch vụ."""
+    # Bạn có thể thêm logic kiểm tra kết nối DB/AI ở đây để Health Check thông minh hơn
+    return JSONResponse(content={"status": "ok", "service": "CogniLearn MCP Server"})
 
 # --- Định nghĩa các Tools ---
 @mcp.tool()
@@ -106,18 +122,9 @@ def retrieve_similar_memories(
         print(f"Error in retrieve_similar_memories tool: {e}")
         return {"status": "error", "message": str(e), "memories": [], "context_text": ""}
 
-# --- THÊM HEALTH CHECK ENDPOINT NÀY ---
-# Đảm bảo nó được định nghĩa bằng @mcp.resource
-@mcp.resource("healthz://status") 
-async def get_healthz_status() -> dict:
-    """Endpoint để Render kiểm tra sức khỏe dịch vụ."""
-    # Bạn có thể thêm logic kiểm tra DB, AI ở đây để Health Check thông minh hơn
-    return {"status": "ok", "service": "CogniLearn MCP Server"}
-# --- KẾT THÚC THÊM HEALTH CHECK ---
-
 # --- Chạy Server (cho mục đích phát triển local) ---
 if __name__ == "__main__":
-    # Khi chạy local, bạn có thể dùng transport="stdio" hoặc "streamable-http".
-    # Với Render, Gunicorn sẽ chạy nó như streamable-http mặc định.
-    print("Starting MCP Server for CogniLearn (for local testing)...")
-    mcp.run(transport="stdio") # Dùng stdio để dễ gỡ lỗi local, hoặc streamable-http nếu muốn test HTTP local
+    print(f"Starting MCP Server for CogniLearn (for local testing) on port {SERVER_PORT}...")
+    # Khi chạy local, dùng stdio để dễ gỡ lỗi, hoặc streamable-http nếu muốn test HTTP local
+    # Render sẽ không chạy khối này.
+    mcp.run(transport="stdio")

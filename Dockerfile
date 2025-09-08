@@ -21,4 +21,4 @@ COPY . .
 EXPOSE 8002
 
 # Bước 8: Lệnh cuối cùng để chạy server khi container khởi động
-CMD ["gunicorn", "-w", "4", "-k", "uvicorn.workers.UvicornWorker", "src.memory_mcp_server:app", "--bind", "0.0.0.0:$PORT"]
+CMD gunicorn -w 4 -k uvicorn.workers.UvicornWorker src.memory_mcp_server:app --bind 0.0.0.0:$PORT

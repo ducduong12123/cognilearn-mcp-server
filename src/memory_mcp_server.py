@@ -55,12 +55,11 @@ app = mcp.streamable_http_app()
 
 # --- Định nghĩa Health Check Endpoint TRỰC TIẾP trên ứng dụng ASGI ---
 # Render sẽ gọi /healthz. Endpoint này phải trả về 200 OK.
-@app.get("/healthz")
-async def health_check():
-    """Endpoint để Render kiểm tra sức khỏe dịch vụ."""
-    # Bạn có thể thêm logic kiểm tra kết nối DB/AI ở đây để Health Check thông minh hơn
+async def health_check_handler(request):
+    """Handler cho Endpoint Health Check."""
     return JSONResponse(content={"status": "ok", "service": "CogniLearn MCP Server"})
 
+app.routes.append(Route("/healthz", endpoint=health_check_handler, methods=["GET"]))
 # --- Định nghĩa các Tools ---
 @mcp.tool()
 def add_memory(

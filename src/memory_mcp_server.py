@@ -1,23 +1,22 @@
 import os
-from typing import List, Dict, Any, Optional, AsyncIterator
-
+import time
+from typing import Optional, AsyncIterator, Dict, Any
 from contextlib import asynccontextmanager
+
 from mcp.server.fastmcp import FastMCP
 from starlette.applications import Starlette
-from starlette.responses import JSONResponse
 from starlette.requests import Request
+from starlette.responses import JSONResponse
+from starlette.middleware.cors import CORSMiddleware
 
-# Import MemoryService từ module đã có
+# Service của bạn
 from src.core.memory_service import MemoryService
 
-# --- LAZY INITIALIZATION SINGLETON PATTERN ---
+
+# ---------------------- Lazy singleton ----------------------
 _memory_service_instance: Optional[MemoryService] = None
 
 def get_memory_service() -> MemoryService:
-    """
-    Khởi tạo MemoryService theo kiểu "lazy" và đảm bảo singleton
-    trong suốt vòng đời server.
-    """
     global _memory_service_instance
     if _memory_service_instance is None:
         print("🚀 Lazily initializing CogniLearn Memory Service for the first time...")
@@ -25,7 +24,8 @@ def get_memory_service() -> MemoryService:
         print("✅ Memory Service is ready.")
     return _memory_service_instance
 
-# --- Lifespan siêu nhẹ ---
+
+# ---------------------- Lifespan ----------------------
 @asynccontextmanager
 async def simple_lifespan(server: FastMCP) -> AsyncIterator[None]:
     print("🚀 MCP Server starting up quickly (lazy initialization enabled).")
@@ -34,9 +34,13 @@ async def simple_lifespan(server: FastMCP) -> AsyncIterator[None]:
     finally:
         print("🛑 Shutting down server.")
 
-# --- Khởi tạo MCP Server ---
-SERVER_PORT = int(os.getenv("PORT", "8002"))
 
+# ---------------------- Config ----------------------
+SERVER_PORT = int(os.getenv("PORT", "8002"))
+DEFAULT_USER_ID = os.getenv("DEFAULT_USER_ID", "").strip() or None  # fallback cho demo/test
+
+
+# ---------------------- MCP & ASGI app ----------------------
 mcp = FastMCP(
     name="CogniLearn_Memory_Server",
     instructions="A server to manage the long-term memory for CogniLearn students.",
@@ -45,66 +49,121 @@ mcp = FastMCP(
     log_level="DEBUG",
 )
 
-# --- Ứng dụng ASGI chính (Starlette) mà FastMCP mount vào ---
+# Đây là Starlette app mà Render/Gunicorn sẽ import
 app: Starlette = mcp.streamable_http_app()
 
-# --- Health check cho Render (Starlette không có .get nên dùng add_route/route) ---
-async def health_check(request: Request):
-    return JSONResponse({"status": "ok", "service": "CogniLearn MCP Server"})
 
+# ---------------------- (Optional) CORS ----------------------
+# Bật nếu client chạy trong browser
+if os.getenv("ENABLE_CORS", "1") not in ("0", "false", "False"):
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=["*"],            # hoặc đặt ALLOW_ORIGINS qua env để giới hạn domain
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
+
+
+# ---------------------- Logging middleware ----------------------
+@app.middleware("http")
+async def log_requests(request: Request, call_next):
+    start = time.perf_counter()
+    response = await call_next(request)
+    dur_ms = (time.perf_counter() - start) * 1000
+    try:
+        print(f"[HTTP] {request.method} {request.url.path} -> {response.status_code} in {dur_ms:.1f}ms")
+    except Exception:
+        pass
+    return response
+
+
+# ---------------------- Routes tiện kiểm tra ----------------------
+async def index(request: Request):
+    return JSONResponse({"ok": True, "service": "CogniLearn MCP Server", "endpoint": "/mcp", "health": "/healthz"})
+app.add_route("/", index, methods=["GET"])
+
+async def health_check(request: Request):
+    # (Tuỳ chọn) Kiểm tra DB/AI ở đây và trả 200/500 tương ứng
+    return JSONResponse({"status": "ok", "service": "CogniLearn MCP Server"})
 app.add_route("/healthz", health_check, methods=["GET"])
 
-# --- Tools ---
+
+# ---------------------- Tools ----------------------
 @mcp.tool()
 def add_memory(
-    user_id: str,
-    content: str,
+    user_id: Optional[str] = None,
+    content: str = "",
     metadata: dict = None,
     importance: float = 0.5
 ) -> Dict[str, Any]:
     """
-    Lưu một 'ký ức' mới cho học sinh (user_id).
+    Thêm 'memory' cho người dùng. Nếu thiếu user_id, sẽ dùng DEFAULT_USER_ID (nếu cấu hình).
     """
     try:
-        memory_service = get_memory_service()
-        memory_service.add_memory(
-            user_id=user_id,
+        uid = user_id or DEFAULT_USER_ID
+        if not uid:
+            return {
+                "status": "error",
+                "code": "USER_ID_REQUIRED",
+                "message": "Thiếu user_id và không có DEFAULT_USER_ID trong env."
+            }
+
+        ms = get_memory_service()
+        # Tại đây bạn có thể ensure_user_exists hoặc auto create nếu muốn
+        ms.add_memory(
+            user_id=uid,
             content=content,
             metadata=metadata,
             importance=importance
         )
-        return {"status": "success", "message": f"Memory added for user {user_id}."}
+        return {"status": "success", "message": f"Memory added for user {uid}."}
     except Exception as e:
         print(f"Error in add_memory tool: {e}")
         return {"status": "error", "message": str(e)}
 
+
 @mcp.tool()
 def retrieve_similar_memories(
-    user_id: str,
-    query_text: str,
+    user_id: Optional[str] = None,
+    query_text: str = "",
     top_k: int = 5
 ) -> Dict[str, Any]:
     """
-    Truy vấn các ký ức liên quan nhất cho một học sinh (user_id).
+    Truy vấn các ký ức liên quan nhất cho user. Dùng DEFAULT_USER_ID nếu không truyền user_id.
     """
     try:
-        memory_service = get_memory_service()
-        similar_memories = memory_service.retrieve_similar_memories(
-            user_id=user_id,
+        uid = user_id or DEFAULT_USER_ID
+        if not uid:
+            return {
+                "status": "error",
+                "code": "USER_ID_REQUIRED",
+                "message": "Thiếu user_id và không có DEFAULT_USER_ID trong env.",
+                "memories": [],
+                "context_text": ""
+            }
+
+        ms = get_memory_service()
+        results = ms.retrieve_similar_memories(
+            user_id=uid,
             query_text=query_text,
             top_k=top_k
         )
-        if not similar_memories:
+        if not results:
             return {"memories": [], "context_text": "Không tìm thấy ký ức nào liên quan."}
-        context_text = "Dưới đây là một số ký ức liên quan:\n"
-        for i, memory in enumerate(similar_memories):
-            context_text += f"{i+1}. {memory.get('content', 'N/A')} (Similarity: {memory.get('similarity', 0):.2f})\n"
-        return {"memories": similar_memories, "context_text": context_text.strip()}
+
+        lines = []
+        for i, m in enumerate(results, 1):
+            lines.append(f"{i}. {m.get('content', 'N/A')} (Similarity: {m.get('similarity', 0):.2f})")
+
+        return {"memories": results, "context_text": "\n".join(lines)}
     except Exception as e:
         print(f"Error in retrieve_similar_memories tool: {e}")
         return {"status": "error", "message": str(e), "memories": [], "context_text": ""}
 
-# --- Chạy local (Render sẽ không dùng khối này) ---
+
+# ---------------------- Local run (Render không dùng block này) ----------------------
 if __name__ == "__main__":
     print(f"Starting MCP Server for CogniLearn (for local testing) on port {SERVER_PORT}...")
+    # Local: dùng stdio cho IDE/MCP inspector; muốn test HTTP local thì đổi sang streamable-http
     mcp.run(transport="stdio")

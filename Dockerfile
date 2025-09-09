@@ -1,25 +1,24 @@
-# Bước 1: Chọn một "hệ điều hành" cơ bản
+# 1) Base image
 FROM python:3.12-slim
 
-# Bước 2: Tạo một thư mục bên trong "hộp" Docker để chứa code
+# 2) Workdir
 WORKDIR /app
 
-# Bước 3: Cài đặt công cụ quản lý gói 'uv'
+# 3) Tool to install deps fast
 RUN pip install uv
 
-# Bước 4: Sao chép file định nghĩa các thư viện vào trước
+# 4) Copy requirements first to leverage layer cache
 COPY requirements.txt ./
 
-# Bước 5: Cài đặt tất cả các thư viện từ requirements.txt
-# Sử dụng 'uv pip install' để cài vào môi trường Python hệ thống của container
+# 5) Install deps into system env
 RUN uv pip install --system -r requirements.txt
 
-# Bước 6: Bây giờ mới sao chép toàn bộ mã nguồn của dự án vào
+# 6) Copy project code
 COPY . .
 
-# Bước 7: Mở cổng mà ứng dụng lắng nghe (sẽ được Render chỉ định qua biến $PORT)
-EXPOSE 8002 
+# 7) Expose a default dev port (Render tự đặt $PORT khi deploy)
+EXPOSE 8002
 
-# Bước 8: Lệnh cuối cùng để chạy server khi container khởi động
-# Dạng shell để $PORT được thay thế đúng cách
-CMD gunicorn -w 4 -k uvicorn.workers.UvicornWorker src.memory_mcp_server:app --bind 0.0.0.0:$PORT
+# 8) Start command: bind theo $PORT của Render (fallback 8002)
+#    Cho phép chỉnh số worker qua biến WORKERS (mặc định 4)
+CMD ["sh", "-c", "gunicorn -w ${WORKERS:-4} -k uvicorn.workers.UvicornWorker src.memory_mcp_server:app --bind 0.0.0.0:${PORT:-8002}"]

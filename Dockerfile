@@ -11,14 +11,15 @@ RUN pip install uv
 COPY requirements.txt ./
 
 # Bước 5: Cài đặt tất cả các thư viện từ requirements.txt
-# Sử dụng 'uv pip install' thay vì 'uv sync'
+# Sử dụng 'uv pip install' để cài vào môi trường Python hệ thống của container
 RUN uv pip install --system -r requirements.txt
 
 # Bước 6: Bây giờ mới sao chép toàn bộ mã nguồn của dự án vào
 COPY . .
 
-# Bước 7: "Mở" cổng 8002 của container
-EXPOSE 8002
+# Bước 7: Mở cổng mà ứng dụng lắng nghe (sẽ được Render chỉ định qua biến $PORT)
+EXPOSE 8002 # Render sẽ chuyển tiếp $PORT đến cổng này
 
 # Bước 8: Lệnh cuối cùng để chạy server khi container khởi động
+# Dạng shell để $PORT được thay thế đúng cách
 CMD gunicorn -w 4 -k uvicorn.workers.UvicornWorker src.memory_mcp_server:app --bind 0.0.0.0:$PORT

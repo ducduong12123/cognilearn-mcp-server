@@ -42,7 +42,9 @@ mcp = FastMCP(
     lifespan=simple_lifespan,
     port=SERVER_PORT,
     log_level="DEBUG",
+    stateless_http=True,   # <<< thêm dòng này
 )
+
 
 app: Starlette = mcp.streamable_http_app()
 

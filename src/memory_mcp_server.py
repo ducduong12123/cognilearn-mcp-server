@@ -2,10 +2,9 @@ import os
 from typing import List, Dict, Any, Optional, AsyncIterator
 
 from contextlib import asynccontextmanager
-from mcp.server.fastmcp import FastMCP, Context
-from mcp.server.session import ServerSession
-from starlette.applications import Starlette # Cần import này để dùng app.get trực tiếp
-from starlette.responses import JSONResponse # Cần import này để trả về JSON cho Health Check
+from mcp.server.fastmcp import FastMCP
+from starlette.applications import Starlette
+from starlette.responses import JSONResponse
 
 # Import MemoryService từ module đã có
 from src.core.memory_service import MemoryService
@@ -21,9 +20,8 @@ def get_memory_service() -> MemoryService:
     global _memory_service_instance
     if _memory_service_instance is None:
         print("🚀 Lazily initializing CogniLearn Memory Service for the first time...")
-        # Lỗi sẽ xảy ra ở đây nếu thiếu biến môi trường, giúp gỡ lỗi dễ hơn
         _memory_service_instance = MemoryService()
-        print("✅ Memory Service is now ready.")
+        print("✅ Memory Service is ready.")
     return _memory_service_instance
 
 # --- Vòng đời (Lifespan) đơn giản ---
@@ -55,11 +53,20 @@ app = mcp.streamable_http_app()
 
 # --- Định nghĩa Health Check Endpoint TRỰC TIẾP trên ứng dụng ASGI ---
 # Render sẽ gọi /healthz. Endpoint này phải trả về 200 OK.
-async def health_check_handler(request):
-    """Handler cho Endpoint Health Check."""
+@app.get("/healthz")
+async def health_check():
+    """Endpoint để Render kiểm tra sức khỏe dịch vụ."""
+    # Bạn có thể thêm logic kiểm tra kết nối DB/AI ở đây để Health Check thông minh hơn
+    # Ví dụ:
+    # try:
+    #     ms = get_memory_service()
+    #     # Thực hiện một truy vấn DB/AI nhỏ để kiểm tra kết nối
+    #     # ms.supabase_client.from_().select('*').limit(1).execute() 
+    #     return JSONResponse(content={"status": "ok", "service": "CogniLearn MCP Server", "db_connected": True, "ai_connected": True})
+    # except Exception as e:
+    #     return JSONResponse(content={"status": "error", "message": f"Health check failed: {e}"}, status_code=500)
     return JSONResponse(content={"status": "ok", "service": "CogniLearn MCP Server"})
 
-app.routes.append(Route("/healthz", endpoint=health_check_handler, methods=["GET"]))
 # --- Định nghĩa các Tools ---
 @mcp.tool()
 def add_memory(
@@ -125,5 +132,5 @@ def retrieve_similar_memories(
 if __name__ == "__main__":
     print(f"Starting MCP Server for CogniLearn (for local testing) on port {SERVER_PORT}...")
     # Khi chạy local, dùng stdio để dễ gỡ lỗi, hoặc streamable-http nếu muốn test HTTP local
-    # Render sẽ không chạy khối này.
+    # Render sẽ không chạy khối này, nó sẽ dùng Gunicorn.
     mcp.run(transport="stdio")

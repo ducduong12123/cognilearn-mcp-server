@@ -21,4 +21,12 @@ EXPOSE 8002
 
 # 8) Start command: bind theo $PORT của Render (fallback 8002)
 #    Cho phép chỉnh số worker qua biến WORKERS (mặc định 4)
-CMD ["sh", "-c", "gunicorn -w ${WORKERS:-4} -k uvicorn.workers.UvicornWorker src.memory_mcp_server:app --bind 0.0.0.0:${PORT:-8002}"]
+CMD ["sh", "-c", "gunicorn \
+  -w ${WORKERS:-2} \
+  -k uvicorn.workers.UvicornWorker \
+  src.memory_mcp_server:app \
+  --bind 0.0.0.0:${PORT:-8002} \
+  --timeout ${TIMEOUT:-0} \
+  --keep-alive ${KEEPALIVE:-5} \
+  --log-level info"]
+

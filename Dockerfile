@@ -18,7 +18,7 @@ RUN uv pip install --system -r requirements.txt
 COPY . .
 
 # Bước 7: Mở cổng mà ứng dụng lắng nghe (sẽ được Render chỉ định qua biến $PORT)
-EXPOSE 8002 # Render sẽ chuyển tiếp $PORT đến cổng này
+EXPOSE 8002 
 
 # Bước 8: Lệnh cuối cùng để chạy server khi container khởi động
 # Dạng shell để $PORT được thay thế đúng cách

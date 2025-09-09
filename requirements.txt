@@ -7,7 +7,6 @@ charset-normalizer==3.4.3
 click==8.2.1
 colorama==0.4.6
 deprecation==2.1.0
-fastapi
 google-ai-generativelanguage==0.6.15
 google-api-core==2.25.1
 google-api-python-client==2.179.0

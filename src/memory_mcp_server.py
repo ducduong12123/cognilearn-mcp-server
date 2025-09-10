@@ -205,7 +205,7 @@ def _truncate(text: str, n: int) -> str:
 mcp = FastMCP(
     name=APP_NAME,
     stateless_http=True,        # dùng stateless để tránh phải quản lý session
-    json_response=True          # trả JSON thuần (dễ test bằng curl/Postman)
+    # json_response=True          # trả JSON thuần (dễ test bằng curl/Postman)
 )
 
 # -----------------------------
@@ -518,10 +518,18 @@ mcp_subapp = mcp.streamable_http_app()
 # Tạo FastAPI app chính, reuse lifespan của MCP để quản lý session manager nội bộ
 app = FastAPI(title=APP_NAME, lifespan=mcp_subapp.router.lifespan_context)
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],      # or lock to your n8n origin
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 # Mount MCP sub-app; khi đó endpoint sẽ là /mcp
 # (mount tại "/" để đường dẫn /mcp khả dụng trực tiếp ở root domain)
 app.mount("/mcp", mcp_subapp, name="mcp")
 
+# 5) Health/root for Render
 @app.get("/")
 async def root():
     return {"ok": True, "service": APP_NAME, "ts": int(time.time())}
@@ -530,7 +538,7 @@ async def root():
 async def healthz():
     return {"ok": True}
 
-# (tuỳ chọn) logging middleware
+# (optional) simple request log
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
     start = time.time()

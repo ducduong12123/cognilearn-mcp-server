@@ -5,22 +5,26 @@ FROM python:3.12-slim
 WORKDIR /app
 
 # 3) Tool to install deps fast
-RUN pip install uv
+RUN pip install --no-cache-dir uv
 
 # 4) Copy requirements first to leverage layer cache
 COPY requirements.txt ./
 
-# 5) Install deps into system env
-RUN uv pip install --system -r requirements.txt
+# 5) Install deps into system env (verbose + fallback to pip)
+#    - In case uv resolver gặp xung đột, fallback pip sẽ backtrack kỹ hơn.
+RUN set -eux; \
+    python -V; uv --version; \
+    uv pip install --system -r requirements.txt -v || \
+    (python -m pip install --upgrade pip setuptools wheel && \
+     pip install --no-cache-dir -r requirements.txt)
 
 # 6) Copy project code
 COPY . .
 
-# 7) Expose a default dev port (Render tự đặt $PORT khi deploy)
+# 7) Expose a default dev port (Render sẽ đặt $PORT khi deploy)
 EXPOSE 8002
 
-# 8) Start command: bind theo $PORT của Render (fallback 8002)
-#    Cho phép chỉnh số worker qua biến WORKERS (mặc định 4)
+# 8) Start command
 CMD ["sh", "-c", "gunicorn \
   -w ${WORKERS:-2} \
   -k uvicorn.workers.UvicornWorker \
@@ -29,4 +33,3 @@ CMD ["sh", "-c", "gunicorn \
   --timeout ${TIMEOUT:-0} \
   --keep-alive ${KEEPALIVE:-5} \
   --log-level info"]
-

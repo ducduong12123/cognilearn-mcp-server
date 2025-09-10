@@ -203,10 +203,9 @@ def _truncate(text: str, n: int) -> str:
 # MCP server
 # -----------------------------
 mcp = FastMCP(
-    APP_NAME,
-    app=app,
-    path="/mcp",
-    stateless_http=True,   # quan trọng cho client không quản lý session
+    name=os.getenv("APP_NAME", "cognilearn-mcp"),
+    stateless_http=True,        # dùng stateless để tránh phải quản lý session
+    json_response=True          # trả JSON thuần (dễ test bằng curl/Postman)
 )
 
 # -----------------------------
@@ -513,9 +512,32 @@ def record_practice_result(
 # -----------------------------
 # Healthcheck
 # -----------------------------
+# Tạo ASGI sub-app cho MCP (mặc định mount path bên trong sub-app là /mcp)
+mcp_subapp = mcp.streamable_http_app()
+
+# Tạo FastAPI app chính, reuse lifespan của MCP để quản lý session manager nội bộ
+app = FastAPI(
+    title=os.getenv("APP_NAME", "cognilearn-mcp"),
+    lifespan=mcp_subapp.router.lifespan_context
+)
+
+# Mount MCP sub-app; khi đó endpoint sẽ là /mcp
+# (mount tại "/" để đường dẫn /mcp khả dụng trực tiếp ở root domain)
+app.mount("/", mcp_subapp, name="mcp")
+
+# (Tuỳ chọn) Healthcheck & middleware log như bạn hỏi trước đó:
+@app.middleware("http")
+async def log_requests(request: Request, call_next):
+    import time
+    start = time.time()
+    resp = await call_next(request)
+    dur = (time.time() - start) * 1000
+    print(f"[HTTP] {request.method} {request.url.path} -> {resp.status_code} in {dur:.1f}ms")
+    return resp
+
 @app.get("/healthz")
-def healthz():
-    return {"ok": True, "ts": int(time.time())}
+async def healthz():
+    return {"ok": True}
 
 # -----------------------------
 # Gunicorn cmd (ví dụ Dockerfile)

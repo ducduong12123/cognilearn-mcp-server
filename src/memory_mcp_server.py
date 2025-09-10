@@ -1,5 +1,4 @@
 # memory_mcp_server.py
-from fastapi.middleware.cors import CORSMiddleware
 from __future__ import annotations
 import os, json, time, math
 from typing import Any, Dict, List, Optional
@@ -7,6 +6,8 @@ import datetime as dt
 
 from fastapi import FastAPI, Request, Response
 from mcp.server.fastmcp import FastMCP
+from fastapi.middleware.cors import CORSMiddleware
+
 
 # -----------------------------
 # Config qua biến môi trường

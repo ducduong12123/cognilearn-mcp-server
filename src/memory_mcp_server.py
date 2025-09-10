@@ -515,33 +515,34 @@ def record_practice_result(
 # -----------------------------
 # Healthcheck
 # -----------------------------
-# Tạo ASGI sub-app cho MCP (mặc định mount path bên trong sub-app là /mcp)
+# 1) Tạo ASGI sub-app cho MCP (HTTP Streamable)
 mcp_subapp = mcp.streamable_http_app()
 
-# Tạo FastAPI app chính, reuse lifespan của MCP để quản lý session manager nội bộ
+# 2) App chính: dùng lifespan của MCP sub-app để MCP init/cleanup đúng cách
 app = FastAPI(title=APP_NAME, lifespan=mcp_subapp.router.lifespan_context)
 
+# 3) Bật CORS trực tiếp trên app đang chạy (không tạo FastAPI thứ hai)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],      # or lock to your n8n origin
-    allow_credentials=False,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=["*"],                 # hoặc whitelist domain n8n của bạn
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["*"],                 # để client gửi Mcp-* headers
+    expose_headers=["*"],                # để n8n đọc Mcp-Session-Id, v.v.
 )
-# Mount MCP sub-app; khi đó endpoint sẽ là /mcp
-# (mount tại "/" để đường dẫn /mcp khả dụng trực tiếp ở root domain)
+
+# 4) Mount MCP sub-app tại /mcp (n8n Endpoint = https://.../mcp)
 app.mount("/mcp", mcp_subapp, name="mcp")
 
-# 5) Health/root for Render
+# 5) Healthcheck & root
 @app.get("/")
-async def root():
+async def root_ok():
     return {"ok": True, "service": APP_NAME, "ts": int(time.time())}
 
 @app.get("/healthz")
 async def healthz():
     return {"ok": True}
 
-# (optional) simple request log
+# 6) (Tùy chọn) log request
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
     start = time.time()

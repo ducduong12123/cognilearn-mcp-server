@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import os, json, time, math
 import uuid               # để sinh id: uuid.uuid4()
-from uuid import UUID     # để validate user_id
+from uuid import UUID  # để validate user_id
 from typing import Any, Dict, List, Optional
 import datetime as dt
 
@@ -10,6 +10,13 @@ from fastapi import FastAPI, Request
 from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import JSONResponse          # THÊM DÒNG NÀY
 from mcp.server.fastmcp import FastMCP
+
+def _is_uuid(s: str) -> bool:
+    try:
+        UUID(str(s))
+        return True
+    except Exception:
+        return False
 
 
 # -----------------------------

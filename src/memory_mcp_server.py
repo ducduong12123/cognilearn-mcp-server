@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import os, json, time, math
+import uuid               # để sinh id: uuid.uuid4()
+from uuid import UUID     # để validate user_id
 from typing import Any, Dict, List, Optional
 import datetime as dt
 
@@ -228,16 +230,16 @@ def add_memory(
     if not uid:
         return {"status":"error","message":"missing user_id"}
     row = {
-        "id": f"m_{int(time.time()*1000)}",
-        "userid": uid,
-        "content": (content or "").strip(),
-        "metadata": metadata or {},
-        "importance": float(importance or 0.5),
-        "created_at": _now_iso(),
+        # "id": str(uuid.uuid4()),          # <— sửa về UUID v4
+        "userid": uid,                    # <— cột FK trong bảng là 'userid'
+        "content": (params.get("content") or "").strip(),
+        "metadata": params.get("metadata") or {},
+        "importance": float(params.get("importance") or 0.5),
+        "created_at": now_iso(),          # hoặc hàm tương đương của bạn
     }
-    saved = repo.add(row)
-    return {"status":"success","id": saved.get("id","")}
-
+    # 4) Ghi DB qua repo/supabase
+    repo.add(row)
+    return {"status": "success", "id": row["id"]}
 @mcp.tool()
 def retrieve_similar_memories(
     user_id: str = "",
@@ -465,21 +467,22 @@ def add_memory_normalized(
     if not content:
         return {"status":"error","message":"content trống"}
     row = {
-        "id": f"m_{int(time.time()*1000)}",
+        # "id": str(uuid.uuid4()),      # hoặc bỏ key này nếu để DB tự sinh
         "userid": uid,
         "content": content,
         "metadata": {
             "type": t,
-            "topic": meta.get("topic",""),
-            "question_id": meta.get("question_id",""),
-            "source": meta.get("source","chat")
+            "topic": meta.get("topic", ""),
+            "question_id": meta.get("question_id", ""),
+            "source": meta.get("source", "chat"),
         },
-        "importance": float(meta.get("importance", 0.5)),
-        "created_at": _now_iso()
+        "importance": float(meta.get("importance") or 0.5),
+        "created_at": _now_iso(),
     }
-    saved = repo.add(row)
-    return {"status":"success","id": saved.get("id","")}
+    repo.add(row)
 
+    # Trả về id để client dùng tiếp
+    return {"status": "success", "id": row["id"]}
 @mcp.tool()
 def record_practice_result(
     user_id: str = "",
@@ -496,21 +499,26 @@ def record_practice_result(
     if not uid:
         return {"status":"error","message":"missing user_id"}
     row = {
-        "id": f"m_{int(time.time()*1000)}",
+        # "id": str(uuid.uuid4()),      # hoặc bỏ để DB tự sinh
         "userid": uid,
         "content": f"Kết quả luyện tập: {'đúng' if correct else 'sai'} – {topic} – {note}".strip(),
         "metadata": {
             "type": "practice_result",
             "topic": topic,
             "question_id": question_id,
-            "score": float(score),
-            "correct": bool(correct)
+            "score": float(score) if score is not None else None,
+            "correct": correct,
         },
         "importance": 0.6,
-        "created_at": _now_iso()
+        "created_at": _now_iso(),
     }
-    saved = repo.add(row)
-    return {"status":"ok","id": saved.get("id","")}
+
+    # Ghi DB (1 lần duy nhất)
+    repo.add(row)
+
+    # Trả về id để client dùng tiếp
+    return {"status": "success", "id": row["id"]}
+
 
 # -----------------------------
 # Healthcheck

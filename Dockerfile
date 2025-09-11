@@ -25,12 +25,5 @@ COPY . .
 EXPOSE 8002
 
 # 8) Start command
-CMD ["sh", "-c", "gunicorn \
-  -w ${WORKERS:-2} \
-  -k uvicorn.workers.UvicornWorker \
-  src.memory_mcp_server:app \
-  --bind 0.0.0.0:${PORT:-8002} \
-  --timeout ${TIMEOUT:-0} \
-  --keep-alive ${KEEPALIVE:-5} \
-  --log-level info\
-  --access-logfile "]
+CMD ["sh","-lc","exec gunicorn -w ${WORKERS:-2} -k uvicorn.workers.UvicornWorker src.memory_mcp_server:app --bind 0.0.0.0:${PORT:-8002} --timeout ${TIMEOUT:-0} --keep-alive ${KEEPALIVE:-5} --log-level info --access-logfile - --error-logfile -"]
+

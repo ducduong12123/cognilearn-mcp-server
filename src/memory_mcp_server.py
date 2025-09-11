@@ -5,8 +5,10 @@ from typing import Any, Dict, List, Optional
 import datetime as dt
 
 from fastapi import FastAPI, Request
-from starlette.middleware.cors import CORSMiddleware   # dùng từ starlette là chắc ăn cho cả sub-app
+from starlette.middleware.cors import CORSMiddleware
+from starlette.responses import JSONResponse          # THÊM DÒNG NÀY
 from mcp.server.fastmcp import FastMCP
+
 
 # -----------------------------
 # Config qua biến môi trường
@@ -514,19 +516,18 @@ def record_practice_result(
 # Healthcheck
 # -----------------------------
 # 1) Tạo ASGI sub-app cho MCP (HTTP Streamable)
-# 1) Tạo ASGI sub-app cho MCP (HTTP Streamable)
 mcp_subapp = mcp.streamable_http_app()
 
-# 1a) CORS cho MCP sub-app (để n8n/clients gọi qua HTTP)
+# 1a) CORS cho MCP sub-app
 mcp_subapp.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],          # hoặc whitelist domain n8n của bạn
+    allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
-    expose_headers=["*"],         # để client đọc Mcp-Session-Id,... khi cần
+    expose_headers=["*"],
 )
 
-# 1b) (Khuyến nghị) log riêng cho /mcp để dễ debug
+# 1b) Log riêng cho MCP (decorator middleware của Starlette dùng được)
 @mcp_subapp.middleware("http")
 async def log_mcp_requests(request: Request, call_next):
     start = time.time()
@@ -535,10 +536,11 @@ async def log_mcp_requests(request: Request, call_next):
     print(f"[MCP] {request.method} {request.url.path} -> {resp.status_code} in {dur:.1f}ms")
     return resp
 
-# (Tuỳ chọn) endpoint ping riêng cho MCP
-@mcp_subapp.get("/_ping")
-async def mcp_ping():
-    return {"ok": True, "scope": "mcp"}
+# 1c) PING cho MCP sub-app (DÙNG add_route, KHÔNG DÙNG @mcp_subapp.get)
+async def mcp_ping(request: Request):
+    return JSONResponse({"ok": True, "scope": "mcp"})
+
+mcp_subapp.add_route("/_ping", mcp_ping, methods=["GET"])
 
 # 2) App chính: dùng lifespan của MCP sub-app để MCP init/cleanup đúng cách
 app = FastAPI(title=APP_NAME, lifespan=mcp_subapp.router.lifespan_context)

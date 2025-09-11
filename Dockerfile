@@ -32,4 +32,5 @@ CMD ["sh", "-c", "gunicorn \
   --bind 0.0.0.0:${PORT:-8002} \
   --timeout ${TIMEOUT:-0} \
   --keep-alive ${KEEPALIVE:-5} \
-  --log-level info"]
+  --log-level info\
+  --access-logfile "]

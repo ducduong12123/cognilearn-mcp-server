@@ -228,18 +228,21 @@ def add_memory(
     """
     uid = user_id or getattr(app.state, "user_id", "") or ""
     if not uid:
-        return {"status":"error","message":"missing user_id"}
+        return {"status": "error", "message": "missing user_id"}
+    if not _is_uuid(uid):
+        return {"status": "error", "message": "invalid user_id (expect UUID)"}
+
     row = {
-        # "id": str(uuid.uuid4()),          # <— sửa về UUID v4
-        "userid": uid,                    # <— cột FK trong bảng là 'userid'
-        "content": (params.get("content") or "").strip(),
-        "metadata": params.get("metadata") or {},
-        "importance": float(params.get("importance") or 0.5),
-        "created_at": now_iso(),          # hoặc hàm tương đương của bạn
+        # "id": str(uuid.uuid4()),                        # sinh UUID v4 ở app
+        "userid": uid,                                  # FK → profiles.id
+        "content": (content or "").strip(),             # dùng biến hàm, không dùng params
+        "metadata": metadata or {},
+        "importance": float(importance or 0.5),
+        "created_at": _now_iso(),                       # dùng đúng _now_iso()
     }
-    # 4) Ghi DB qua repo/supabase
-    repo.add(row)
-    return {"status": "success", "id": row["id"]}
+    saved = repo.add(row)
+    # trả id (ưu tiên id DB trả về nếu có)
+    return {"status": "success", "id": saved.get("id", row["id"])}
 @mcp.tool()
 def retrieve_similar_memories(
     user_id: str = "",
@@ -458,16 +461,25 @@ def add_memory_normalized(
     """
     uid = user_id or getattr(app.state, "user_id", "") or ""
     if not uid:
-        return {"status":"error","message":"missing user_id"}
-    allowed = {"skill","goal","preference","constraint","performance","error","deep_dive","topic_stat","certificate","project","practice_result","recommendation","note"}
-    t = (meta.get("type") or "note").lower()
+        return {"status": "error", "message": "missing user_id"}
+    if not _is_uuid(uid):
+        return {"status": "error", "message": "invalid user_id (expect UUID)"}
+
+    allowed = {
+        "skill","goal","preference","constraint","performance","error",
+        "deep_dive","topic_stat","certificate","project","practice_result",
+        "recommendation","note"
+    }
+    t = (meta.get("type") or "note").lower().strip()
     if t not in allowed:
-        return {"status":"error","message": f"metadata.type='{t}' không hợp lệ"}
+        return {"status": "error", "message": f"metadata.type='{t}' không hợp lệ"}
+
     content = (content or "").strip()
     if not content:
-        return {"status":"error","message":"content trống"}
+        return {"status": "error", "message": "content trống"}
+
     row = {
-        # "id": str(uuid.uuid4()),      # hoặc bỏ key này nếu để DB tự sinh
+        # "id": str(uuid.uuid4()),
         "userid": uid,
         "content": content,
         "metadata": {
@@ -479,10 +491,8 @@ def add_memory_normalized(
         "importance": float(meta.get("importance") or 0.5),
         "created_at": _now_iso(),
     }
-    repo.add(row)
-
-    # Trả về id để client dùng tiếp
-    return {"status": "success", "id": row["id"]}
+    saved = repo.add(row)
+    return {"status": "success", "id": saved.get("id", row["id"])}
 @mcp.tool()
 def record_practice_result(
     user_id: str = "",
@@ -497,9 +507,12 @@ def record_practice_result(
     """
     uid = user_id or getattr(app.state, "user_id", "") or ""
     if not uid:
-        return {"status":"error","message":"missing user_id"}
+        return {"status": "error", "message": "missing user_id"}
+    if not _is_uuid(uid):
+        return {"status": "error", "message": "invalid user_id (expect UUID)"}
+
     row = {
-        # "id": str(uuid.uuid4()),      # hoặc bỏ để DB tự sinh
+        # "id": str(uuid.uuid4()),
         "userid": uid,
         "content": f"Kết quả luyện tập: {'đúng' if correct else 'sai'} – {topic} – {note}".strip(),
         "metadata": {
@@ -507,17 +520,13 @@ def record_practice_result(
             "topic": topic,
             "question_id": question_id,
             "score": float(score) if score is not None else None,
-            "correct": correct,
+            "correct": bool(correct),
         },
         "importance": 0.6,
         "created_at": _now_iso(),
     }
-
-    # Ghi DB (1 lần duy nhất)
-    repo.add(row)
-
-    # Trả về id để client dùng tiếp
-    return {"status": "success", "id": row["id"]}
+    saved = repo.add(row)
+    return {"status": "success", "id": saved.get("id", row["id"])}
 
 
 # -----------------------------

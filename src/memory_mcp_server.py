@@ -1,14 +1,12 @@
-# memory_mcp_server.py
 from __future__ import annotations
+
 import os, json, time, math
 from typing import Any, Dict, List, Optional
 import datetime as dt
 
-from fastapi import FastAPI, Request, Response
-from fastapi.middleware.cors import CORSMiddleware
+from fastapi import FastAPI, Request
+from starlette.middleware.cors import CORSMiddleware   # dùng từ starlette là chắc ăn cho cả sub-app
 from mcp.server.fastmcp import FastMCP
-
-
 
 # -----------------------------
 # Config qua biến môi trường
@@ -516,12 +514,36 @@ def record_practice_result(
 # Healthcheck
 # -----------------------------
 # 1) Tạo ASGI sub-app cho MCP (HTTP Streamable)
+# 1) Tạo ASGI sub-app cho MCP (HTTP Streamable)
 mcp_subapp = mcp.streamable_http_app()
+
+# 1a) CORS cho MCP sub-app (để n8n/clients gọi qua HTTP)
+mcp_subapp.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],          # hoặc whitelist domain n8n của bạn
+    allow_methods=["*"],
+    allow_headers=["*"],
+    expose_headers=["*"],         # để client đọc Mcp-Session-Id,... khi cần
+)
+
+# 1b) (Khuyến nghị) log riêng cho /mcp để dễ debug
+@mcp_subapp.middleware("http")
+async def log_mcp_requests(request: Request, call_next):
+    start = time.time()
+    resp = await call_next(request)
+    dur = (time.time() - start) * 1000
+    print(f"[MCP] {request.method} {request.url.path} -> {resp.status_code} in {dur:.1f}ms")
+    return resp
+
+# (Tuỳ chọn) endpoint ping riêng cho MCP
+@mcp_subapp.get("/_ping")
+async def mcp_ping():
+    return {"ok": True, "scope": "mcp"}
 
 # 2) App chính: dùng lifespan của MCP sub-app để MCP init/cleanup đúng cách
 app = FastAPI(title=APP_NAME, lifespan=mcp_subapp.router.lifespan_context)
 
-# 3) Bật CORS trực tiếp trên app đang chạy (không tạo FastAPI thứ hai)
+# 2a) CORS cho app chính
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],                 # hoặc whitelist domain n8n của bạn
@@ -530,10 +552,10 @@ app.add_middleware(
     expose_headers=["*"],                # để n8n đọc Mcp-Session-Id, v.v.
 )
 
-# 4) Mount MCP sub-app tại /mcp (n8n Endpoint = https://.../mcp)
+# 3) Mount MCP sub-app tại /mcp (n8n Endpoint = https://.../mcp)
 app.mount("/mcp", mcp_subapp, name="mcp")
 
-# 5) Healthcheck & root
+# 4) Healthcheck & root
 @app.get("/")
 async def root_ok():
     return {"ok": True, "service": APP_NAME, "ts": int(time.time())}
@@ -542,7 +564,7 @@ async def root_ok():
 async def healthz():
     return {"ok": True}
 
-# 6) (Tùy chọn) log request
+# 5) (Tùy chọn) log request của app chính
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
     start = time.time()

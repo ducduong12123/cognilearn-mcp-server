@@ -223,57 +223,57 @@ mcp = FastMCP(
 # -----------------------------
 # Tool cũ (compat)
 # -----------------------------
-@mcp.tool()
-def add_memory(
-    user_id: str = "",
-    content: str = "",
-    metadata: Dict[str, Any] = {},
-    importance: float = 0.5
-) -> Dict[str, Any]:
-    """
-    Thêm 1 memory (tương thích phiên bản cũ).
-    """
-    uid = user_id or getattr(app.state, "user_id", "") or ""
-    if not uid:
-        return {"status": "error", "message": "missing user_id"}
-    if not _is_uuid(uid):
-        return {"status": "error", "message": "invalid user_id (expect UUID)"}
+# @mcp.tool()
+# def add_memory(
+#     user_id: str = "",
+#     content: str = "",
+#     metadata: Dict[str, Any] = {},
+#     importance: float = 0.5
+# ) -> Dict[str, Any]:
+#     """
+#     Thêm 1 memory (tương thích phiên bản cũ).
+#     """
+#     uid = user_id or getattr(app.state, "user_id", "") or ""
+#     if not uid:
+#         return {"status": "error", "message": "missing user_id"}
+#     if not _is_uuid(uid):
+#         return {"status": "error", "message": "invalid user_id (expect UUID)"}
 
-    row = {
-        "id": str(uuid.uuid4()),                        # sinh UUID v4 ở app
-        "userid": uid,                                  # FK → profiles.id
-        "content": (content or "").strip(),             # dùng biến hàm, không dùng params
-        "metadata": metadata or {},
-        "importance": float(importance or 0.5),
-        "created_at": _now_iso(),                       # dùng đúng _now_iso()
-    }
-    saved = repo.add(row)
-    # trả id (ưu tiên id DB trả về nếu có)
-    return {"status": "success", "id": saved.get("id", row["id"])}
-@mcp.tool()
-def retrieve_similar_memories(
-    user_id: str = "",
-    query_text: str = "",
-    top_k: int = 5
-) -> Dict[str, Any]:
-    """
-    Lấy top_k memory liên quan (compat cũ) – dùng heuristic nhanh.
-    """
-    uid = user_id or getattr(app.state, "user_id", "") or ""
-    if not uid:
-        return {"memories": [], "context_text": "", "note": "missing user_id"}
-    rows = repo.list_user(uid, limit=max(50, top_k*5))
-    ranked = sorted(rows, key=lambda r: _score(r, query_text, []), reverse=True)[:max(1, top_k)]
-    context = "\n".join([_truncate(r.get("content",""), 160) for r in ranked])
-    return {
-        "memories": [{
-            "id": r.get("id"),
-            "content": r.get("content",""),
-            "metadata": r.get("metadata", {}),
-            "similarity": _score(r, query_text, [])
-        } for r in ranked],
-        "context_text": context
-    }
+#     row = {
+#         "id": str(uuid.uuid4()),                        # sinh UUID v4 ở app
+#         "userid": uid,                                  # FK → profiles.id
+#         "content": (content or "").strip(),             # dùng biến hàm, không dùng params
+#         "metadata": metadata or {},
+#         "importance": float(importance or 0.5),
+#         "created_at": _now_iso(),                       # dùng đúng _now_iso()
+#     }
+#     saved = repo.add(row)
+#     # trả id (ưu tiên id DB trả về nếu có)
+#     return {"status": "success", "id": saved.get("id", row["id"])}
+# @mcp.tool()
+# def retrieve_similar_memories(
+#     user_id: str = "",
+#     query_text: str = "",
+#     top_k: int = 5
+# ) -> Dict[str, Any]:
+#     """
+#     Lấy top_k memory liên quan (compat cũ) – dùng heuristic nhanh.
+#     """
+#     uid = user_id or getattr(app.state, "user_id", "") or ""
+#     if not uid:
+#         return {"memories": [], "context_text": "", "note": "missing user_id"}
+#     rows = repo.list_user(uid, limit=max(50, top_k*5))
+#     ranked = sorted(rows, key=lambda r: _score(r, query_text, []), reverse=True)[:max(1, top_k)]
+#     context = "\n".join([_truncate(r.get("content",""), 160) for r in ranked])
+#     return {
+#         "memories": [{
+#             "id": r.get("id"),
+#             "content": r.get("content",""),
+#             "metadata": r.get("metadata", {}),
+#             "similarity": _score(r, query_text, [])
+#         } for r in ranked],
+#         "context_text": context
+#     }
 
 # -----------------------------
 # Tool mới: lấy sạch–gọn cho Agent
@@ -287,9 +287,15 @@ def search_memories(
     fields: Dict[str, Any] = {}
 ) -> Dict[str, Any]:
     """
-    Lọc + xếp hạng + cắt gọn. Trả items nhỏ gọn cho prompt.
-    filter: {"types":[], "topics":[], "since":"", "until":"", "min_importance":0.0}
-    fields: {"include":["id","content","metadata"], "truncate_chars":220}
+    Công cụ tìm kiếm chính để truy xuất thông tin từ bộ nhớ dài hạn của học sinh.
+    Hãy sử dụng công cụ này khi người dùng hỏi về lịch sử, tiến độ, điểm mạnh, điểm yếu hoặc bất kỳ thông tin nào đã được lưu trữ trước đó.
+
+    Args:
+        user_id (str): Mã định danh duy nhất của học sinh. BẮT BUỘC.
+        query_text (str): Một câu hỏi hoặc mô tả rõ ràng về thông tin cần tìm. Ví dụ: "khó khăn của học sinh với môn hình học".
+        filter (dict, optional): Một đối tượng JSON để lọc kết quả. Các key hợp lệ là: "types" (danh sách các loại ký ức), "topics" (danh sách các chủ đề), "since" (ngày bắt đầu, định dạng ISO), "until" (ngày kết thúc, định dạng ISO), "min_importance" (số từ 0.0 đến 1.0).
+        limit (int, optional): Số lượng kết quả tối đa cần trả về. Mặc định là 10.
+        fields (dict, optional): Một đối tượng JSON để chỉ định các trường thông tin cần trả về. Các key hợp lệ là: "include" (danh sách các trường, ví dụ ["id", "content"]), "truncate_chars" (số ký tự tối đa cho mỗi nội dung).
     """
     uid = user_id or getattr(app.state, "user_id", "") or ""
     if not uid:
@@ -324,9 +330,14 @@ def build_context_pack(
     budget: Dict[str, Any] = {}
 ) -> Dict[str, Any]:
     """
-    Trả gói context nén theo nhu cầu câu hỏi: sections + citations, giới hạn token.
-    need: {"sections":["weaknesses","topic_stats","recent_errors","profile"], "topics":[], "horizon_days":120}
-    budget: {"max_items":12, "max_chars_per_item":160, "max_sections":4}
+    Tạo một "gói ngữ cảnh" (context pack) được tóm tắt và cấu trúc hóa về hiệu năng của học sinh.
+    Công cụ này rất mạnh mẽ. Hãy sử dụng khi cần một cái nhìn tổng quan, đa chiều về học sinh để trả lời các câu hỏi phức tạp.
+
+    Args:
+        user_id (str): Mã định danh duy nhất của học sinh. BẮT BUỘC.
+        question (str): Câu hỏi hoặc chủ đề chính cần phân tích. Ví dụ: "đánh giá tổng quan năng lực học toán".
+        need (dict, optional): Chỉ định các phần thông tin cần có trong báo cáo. Các key hợp lệ là: "sections" (danh sách các mục, ví dụ ["weaknesses", "topic_stats"]), "topics" (lọc theo chủ đề), "horizon_days" (xem xét dữ liệu trong bao nhiêu ngày qua).
+        budget (dict, optional): Giới hạn về độ dài của kết quả. Các key hợp lệ là: "max_items", "max_chars_per_item".
     """
     uid = user_id or getattr(app.state, "user_id", "") or ""
     if not uid:
@@ -387,7 +398,13 @@ def summarize_performance(
     timeframe_days: int = 180
 ) -> Dict[str, Any]:
     """
-    Tổng hợp hiệu năng theo chủ đề để agent biết ưu tiên luyện tập.
+    Tổng hợp và thống kê hiệu năng học tập của học sinh theo từng chủ đề.
+    Sử dụng công cụ này khi người dùng muốn biết họ giỏi hay yếu ở những chủ đề nào, hoặc khi cần dữ liệu thống kê cụ thể.
+
+    Args:
+        user_id (str): Mã định danh duy nhất của học sinh. BẮT BUỘC.
+        topics (list, optional): Một danh sách các chủ đề cụ thể cần thống kê. Nếu bỏ trống, sẽ thống kê tất cả các chủ đề.
+        timeframe_days (int, optional): Khoảng thời gian (số ngày) nhìn về quá khứ để lấy dữ liệu. Mặc định là 180 ngày.
     """
     uid = user_id or getattr(app.state, "user_id", "") or ""
     if not uid:
@@ -415,7 +432,15 @@ def propose_question_specs(
     difficulty_profile: Dict[str, float] = {}
 ) -> Dict[str, Any]:
     """
-    Đề xuất 'specs' câu hỏi luyện tập theo điểm yếu (để LLM của Agent render đề).
+    Phân tích điểm yếu của học sinh và đề xuất cấu trúc (specifications) cho các câu hỏi luyện tập mới.
+    Công cụ này KHÔNG tạo ra câu hỏi, mà chỉ đưa ra kế hoạch/yêu cầu để một agent khác có thể tạo câu hỏi.
+    Hãy sử dụng khi người dùng muốn có bài tập luyện tập được cá nhân hóa.
+
+    Args:
+        user_id (str): Mã định danh duy nhất của học sinh. BẮT BUỘC.
+        count (int, optional): Số lượng câu hỏi cần đề xuất cấu trúc. Mặc định là 8.
+        focus_topics (list, optional): Các chủ đề cụ thể cần tập trung vào. Nếu bỏ trống, công cụ sẽ tự động xác định từ các điểm yếu.
+        difficulty_profile (dict, optional): Phân bổ độ khó. Ví dụ: {"easy": 0.2, "medium": 0.6, "hard": 0.2}.
     """
     perf = summarize_performance(user_id=user_id, topics=focus_topics or [], timeframe_days=180)
     targets = [t["topic"] for t in (perf.get("weakest") or [])] or (focus_topics or [])
@@ -464,7 +489,13 @@ def add_memory_normalized(
     meta: Dict[str, Any] = {}
 ) -> Dict[str, Any]:
     """
-    Lưu fact chuẩn hoá (1 câu ngắn, có meta.type rõ ràng).
+    Lưu một thông tin (fact) ngắn gọn, đã được chuẩn hóa vào bộ nhớ dài hạn của học sinh.
+    Đây là công cụ chính để GHI nhớ. Sử dụng sau mỗi tương tác quan trọng hoặc khi người dùng cung cấp thông tin mới.
+
+    Args:
+        user_id (str): Mã định danh của học sinh. BẮT BUỘC.
+        content (str): Nội dung ký ức, phải là một câu ngắn gọn, khách quan. BẮT BUỘC.
+        meta (dict): Metadata có cấu trúc. BẮT BUỘC phải chứa một key "type" hợp lệ. Các loại (type) hợp lệ bao gồm: "skill", "goal", "preference", "performance", "error", "deep_dive", "note".
     """
     uid = user_id or getattr(app.state, "user_id", "") or ""
     if not uid:
@@ -510,7 +541,16 @@ def record_practice_result(
     score: float = 1.0
 ) -> Dict[str, Any]:
     """
-    Ghi kết quả luyện tập để nuôi thống kê & điểm yếu.
+    Ghi lại kết quả sau khi học sinh làm một bài tập luyện tập.
+    Công cụ này rất quan trọng để cập nhật và nuôi dưỡng dữ liệu thống kê về hiệu năng học tập.
+
+    Args:
+        user_id (str): Mã định danh của học sinh. BẮT BUỘC.
+        question_id (str): Mã của câu hỏi đã làm.
+        topic (str): Chủ đề của câu hỏi.
+        correct (bool): Học sinh trả lời đúng hay sai.
+        note (str, optional): Ghi chú thêm về câu trả lời của học sinh.
+        score (float, optional): Điểm số cho câu trả lời (từ 0.0 đến 1.0).
     """
     uid = user_id or getattr(app.state, "user_id", "") or ""
     if not uid:

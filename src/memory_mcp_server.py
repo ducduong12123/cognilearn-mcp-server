@@ -240,7 +240,7 @@ def add_memory(
         return {"status": "error", "message": "invalid user_id (expect UUID)"}
 
     row = {
-        # "id": str(uuid.uuid4()),                        # sinh UUID v4 ở app
+        "id": str(uuid.uuid4()),                        # sinh UUID v4 ở app
         "userid": uid,                                  # FK → profiles.id
         "content": (content or "").strip(),             # dùng biến hàm, không dùng params
         "metadata": metadata or {},
@@ -486,7 +486,7 @@ def add_memory_normalized(
         return {"status": "error", "message": "content trống"}
 
     row = {
-        # "id": str(uuid.uuid4()),
+        "id": str(uuid.uuid4()),
         "userid": uid,
         "content": content,
         "metadata": {
@@ -519,7 +519,7 @@ def record_practice_result(
         return {"status": "error", "message": "invalid user_id (expect UUID)"}
 
     row = {
-        # "id": str(uuid.uuid4()),
+        "id": str(uuid.uuid4()),
         "userid": uid,
         "content": f"Kết quả luyện tập: {'đúng' if correct else 'sai'} – {topic} – {note}".strip(),
         "metadata": {

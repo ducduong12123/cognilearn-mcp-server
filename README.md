@@ -5,9 +5,12 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.111-009688)
 ![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey)
 
-> **Status (09/2026):** reference implementation from the 2025 CogniLearn prototype, no longer
-> maintained. The design (identity from the caller, typed memory facts, budgeted context packs)
-> carried over into later work; the code is kept as-is for reading and for local experiments.
+> **Archived — historical project (built 10–12 September 2025, last code change 12 Sep 2025).**
+> This was the memory layer of the 2025 CogniLearn prototype and has not been developed since;
+> the repository is read-only and kept as a reference. Dependencies are pinned to their
+> September-2025 versions (`mcp` 1.13, `supabase` 2.18). For current agent work see
+> [lms-agentic-gateway](https://github.com/ducduong12123/lms-agentic-gateway) and
+> [ai-finance-assistant](https://github.com/ducduong12123/ai-finance-assistant).
 
 An [MCP](https://modelcontextprotocol.io) server that gives AI tutors **long-term memory about each
 learner**. It was the memory layer of [CogniLearn](https://www.cognilearn.tech/), an intelligent

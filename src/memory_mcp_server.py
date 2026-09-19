@@ -1,4 +1,3 @@
-from __future__ import annotations
 
 import os, json, time, math
 import uuid               # để sinh id: uuid.uuid4()

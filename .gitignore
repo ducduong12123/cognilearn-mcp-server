@@ -1,28 +1,24 @@
-# D:\CogniLearn_Project\.gitignore
-
 # Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python/
-env/
+*.py[cod]
+.Python
+.venv/
 venv/
-.env
+env/
+**/venv_analyzer/
 .pytest_cache/
 .ipynb_checkpoints/
+*.egg-info/
 
-# Logs
+# Secrets and local config
+.env
+.env.*
+!.env.example
+
+# Local databases, logs, caches
+*.db
+*.sqlite
+*.sqlite3
 *.log
-
-# Dependency venv (nếu bạn tạo)
-/venv
-/env
-
-# Render.com
 .render/
-
-# Thêm bất kỳ file/thư mục nhạy cảm hoặc không cần thiết nào khác
-# Ví dụ: nếu bạn có thư mục data/cache thì thêm vào đây:
-# data/
-# cache/
+.cache/

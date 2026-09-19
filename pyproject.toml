@@ -1,7 +1,7 @@
 [project]
-name = "cognilearn-project"
+name = "cognilearn-mcp-server"
 version = "0.1.0"
-description = "Add your description here"
+description = "MCP server that gives AI tutors long-term memory about each learner (CogniLearn)"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

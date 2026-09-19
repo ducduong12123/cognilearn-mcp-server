@@ -5,8 +5,12 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.111-009688)
 ![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey)
 
+> **Status (09/2026):** reference implementation from the 2025 CogniLearn prototype, no longer
+> maintained. The design (identity from the caller, typed memory facts, budgeted context packs)
+> carried over into later work; the code is kept as-is for reading and for local experiments.
+
 An [MCP](https://modelcontextprotocol.io) server that gives AI tutors **long-term memory about each
-learner**. It is the memory layer of [CogniLearn](https://www.cognilearn.tech/), an intelligent
+learner**. It was the memory layer of [CogniLearn](https://www.cognilearn.tech/), an intelligent
 tutoring system; any MCP client — Claude, n8n, LangFlow, a custom agent — can read a learner's
 history, strengths and weaknesses, and write new facts back after every interaction.
 
@@ -223,7 +227,7 @@ Dockerfile · pyproject.toml · uv.lock · requirements.txt · .env.example
 
 ## Status and limitations
 
-- Built in 09/2025 for the CogniLearn prototype; the tool set is stable, the ranking is
+- Built in 09/2025 for the CogniLearn prototype and not developed since; the ranking is
   deliberately simple.
 - `_decode_jwt_sub` is a stub: bearer tokens are accepted but not verified. Put the server behind
   a gateway that authenticates the caller and sets `X-User-Id`.

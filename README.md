@@ -5,7 +5,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.111-009688)
 ![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey)
 
-> **Archived — historical project (built 10–12 September 2025, last code change 12 Sep 2025).**
+> **Archived — historical project (built 7–12 September 2025, last code change 12 Sep 2025).**
 > This was the memory layer of the 2025 CogniLearn prototype and has not been developed since;
 > the repository is read-only and kept as a reference. Dependencies are pinned to their
 > September-2025 versions (`mcp` 1.13, `supabase` 2.18). For current agent work see
